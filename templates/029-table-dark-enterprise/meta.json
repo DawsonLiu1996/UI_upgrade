@@ -1,0 +1,15 @@
+{
+  "id": "029-table-dark-enterprise",
+  "name": "Enterprise Table (Dark)",
+  "type": "Table",
+  "source": {
+    "url": "https://carbondesignsystem.com/components/data-table/usage/",
+    "title": "IBM Carbon Data Table"
+  },
+  "tags": {
+    "style": ["企业风", "硬朗", "高密度"],
+    "color": ["深色系", "黑白灰"],
+    "features": ["密度高", "对齐严格", "分隔线强"]
+  }
+}
+

@@ -1,0 +1,15 @@
+{
+  "id": "026-card-brutalist",
+  "name": "Brutalist Card (High Contrast)",
+  "type": "Card",
+  "source": {
+    "url": "https://awwwards.com",
+    "title": "Awwwards (style reference)"
+  },
+  "tags": {
+    "style": ["Brutalist", "高对比", "排版强"],
+    "color": ["黑白灰", "红色点缀"],
+    "features": ["粗边框", "大字号", "强网格"]
+  }
+}
+

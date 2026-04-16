@@ -1,0 +1,15 @@
+{
+  "id": "017-navbar-glass-vercel",
+  "name": "Glass Navbar (Vercel-like)",
+  "type": "Nav",
+  "source": {
+    "url": "https://vercel.com",
+    "title": "Vercel"
+  },
+  "tags": {
+    "style": ["玻璃拟态", "极简", "开发者风"],
+    "color": ["黑白灰", "深色系"],
+    "features": ["毛玻璃顶栏", "大间距", "高对比CTA"]
+  }
+}
+

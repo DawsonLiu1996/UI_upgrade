@@ -1,0 +1,15 @@
+{
+  "id": "018-pricing-glass-shopify",
+  "name": "Pricing Glass (Shopify-green)",
+  "type": "Pricing",
+  "source": {
+    "url": "https://polaris.shopify.com",
+    "title": "Shopify Polaris"
+  },
+  "tags": {
+    "style": ["玻璃拟态", "产品化", "电商风", "转化导向"],
+    "color": ["绿色系", "白底"],
+    "features": ["高亮推荐卡", "对比层级", "徽章标签"]
+  }
+}
+

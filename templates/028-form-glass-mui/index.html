@@ -1,0 +1,62 @@
+<section class="relative overflow-hidden bg-white">
+  <div class="pointer-events-none absolute inset-0">
+    <div class="absolute -left-56 -top-56 h-[720px] w-[720px] rounded-full bg-sky-500/10 blur-3xl"></div>
+    <div class="absolute -right-56 -top-64 h-[720px] w-[720px] rounded-full bg-indigo-500/10 blur-3xl"></div>
+  </div>
+
+  <div class="mx-auto max-w-6xl px-6 py-16">
+    <div class="mx-auto max-w-3xl rounded-3xl border border-zinc-200 bg-white/70 p-8 shadow-sm backdrop-blur sm:p-10">
+      <div class="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+        <div>
+          <div class="text-xs font-semibold text-zinc-500">Form</div>
+          <h2 class="mt-1 text-balance text-2xl font-semibold tracking-tight text-zinc-950">Create API key</h2>
+          <p class="mt-2 text-sm text-zinc-600">Marker: denser fields + clear helper text + strong focus ring.</p>
+        </div>
+        <button class="rounded-2xl bg-sky-600 px-5 py-3 text-sm font-semibold text-white shadow-sm shadow-sky-600/20 hover:bg-sky-700">
+          Create
+        </button>
+      </div>
+
+      <div class="mt-8 grid gap-4 sm:grid-cols-2">
+        <label class="block">
+          <span class="text-xs font-semibold text-zinc-700">Name</span>
+          <input
+            class="mt-2 w-full rounded-2xl border border-zinc-200 bg-white px-4 py-2.5 text-sm text-zinc-950 placeholder:text-zinc-400 focus:border-sky-400 focus:outline-none focus:ring-4 focus:ring-sky-100"
+            placeholder="Server key"
+            type="text"
+          />
+          <span class="mt-2 block text-xs text-zinc-500">Shown once when created. Keep it descriptive.</span>
+        </label>
+        <label class="block">
+          <span class="text-xs font-semibold text-zinc-700">Scope</span>
+          <select
+            class="mt-2 w-full rounded-2xl border border-zinc-200 bg-white px-4 py-2.5 text-sm text-zinc-950 focus:border-sky-400 focus:outline-none focus:ring-4 focus:ring-sky-100"
+          >
+            <option>Read + Write</option>
+            <option>Read only</option>
+            <option>Admin</option>
+          </select>
+          <span class="mt-2 block text-xs text-zinc-500">Choose least privilege needed.</span>
+        </label>
+        <label class="block sm:col-span-2">
+          <span class="text-xs font-semibold text-zinc-700">Description</span>
+          <textarea
+            rows="4"
+            class="mt-2 w-full rounded-2xl border border-zinc-200 bg-white px-4 py-2.5 text-sm text-zinc-950 placeholder:text-zinc-400 focus:border-sky-400 focus:outline-none focus:ring-4 focus:ring-sky-100"
+            placeholder="Where will this key be used?"
+          ></textarea>
+          <span class="mt-2 block text-xs text-zinc-500">Helps audit and revoke keys later.</span>
+        </label>
+      </div>
+
+      <div class="mt-8 flex items-center justify-between rounded-3xl border border-zinc-200 bg-zinc-50 p-5">
+        <div>
+          <div class="text-sm font-semibold text-zinc-950">Rotate keys automatically</div>
+          <div class="mt-1 text-sm text-zinc-600">Recommended for production environments.</div>
+        </div>
+        <input type="checkbox" class="h-4 w-4 accent-sky-600" checked />
+      </div>
+    </div>
+  </div>
+</section>
+

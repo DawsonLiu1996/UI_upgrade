@@ -1,0 +1,15 @@
+{
+  "id": "019-dashboard-dark-glass-linear",
+  "name": "Dark Dashboard (Linear-like)",
+  "type": "Dashboard",
+  "source": {
+    "url": "https://linear.app",
+    "title": "Linear"
+  },
+  "tags": {
+    "style": ["玻璃拟态", "极简", "科技感", "产品化"],
+    "color": ["深色系", "青色系"],
+    "features": ["高密度卡片", "微光边框", "状态徽章"]
+  }
+}
+

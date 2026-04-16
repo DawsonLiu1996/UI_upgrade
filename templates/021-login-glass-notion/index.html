@@ -1,0 +1,71 @@
+<section class="relative overflow-hidden bg-white">
+  <div class="pointer-events-none absolute inset-0">
+    <div class="absolute -left-56 -top-56 h-[720px] w-[720px] rounded-full bg-zinc-900/5 blur-3xl"></div>
+    <div class="absolute -right-56 -top-64 h-[720px] w-[720px] rounded-full bg-zinc-900/5 blur-3xl"></div>
+  </div>
+
+  <div class="mx-auto flex min-h-svh max-w-6xl items-center px-6 py-14">
+    <div class="mx-auto w-full max-w-md">
+      <div class="rounded-3xl border border-zinc-200 bg-white/70 p-8 shadow-sm backdrop-blur">
+        <div class="flex items-center gap-3">
+          <div class="flex h-10 w-10 items-center justify-center rounded-2xl bg-zinc-950 text-sm font-semibold text-white">N</div>
+          <div>
+            <div class="text-sm font-semibold text-zinc-950">Workspace</div>
+            <div class="text-xs text-zinc-500">Sign in to continue</div>
+          </div>
+        </div>
+
+        <form class="mt-8 space-y-4">
+          <label class="block">
+            <span class="text-xs font-semibold text-zinc-700">Email</span>
+            <input
+              type="email"
+              placeholder="name@company.com"
+              class="mt-2 w-full rounded-2xl border border-zinc-200 bg-white px-4 py-3 text-sm text-zinc-950 placeholder:text-zinc-400 focus:border-zinc-400 focus:outline-none focus:ring-4 focus:ring-zinc-100"
+            />
+          </label>
+          <label class="block">
+            <span class="text-xs font-semibold text-zinc-700">Password</span>
+            <input
+              type="password"
+              placeholder="••••••••"
+              class="mt-2 w-full rounded-2xl border border-zinc-200 bg-white px-4 py-3 text-sm text-zinc-950 placeholder:text-zinc-400 focus:border-zinc-400 focus:outline-none focus:ring-4 focus:ring-zinc-100"
+            />
+          </label>
+
+          <div class="flex items-center justify-between">
+            <label class="inline-flex items-center gap-2 text-sm text-zinc-600">
+              <input type="checkbox" class="h-4 w-4 rounded border-zinc-300 accent-zinc-950" />
+              Remember
+            </label>
+            <a href="#" class="text-sm font-semibold text-zinc-900 underline-offset-4 hover:underline">Forgot?</a>
+          </div>
+
+          <button type="button" class="w-full rounded-2xl bg-zinc-950 px-4 py-3 text-sm font-semibold text-white hover:bg-zinc-900">
+            Continue
+          </button>
+
+          <div class="relative py-2">
+            <div class="absolute inset-0 flex items-center">
+              <div class="w-full border-t border-zinc-200"></div>
+            </div>
+            <div class="relative flex justify-center">
+              <span class="bg-white/70 px-3 text-xs text-zinc-500">or</span>
+            </div>
+          </div>
+
+          <div class="grid gap-3 sm:grid-cols-2">
+            <button type="button" class="rounded-2xl border border-zinc-200 bg-white px-4 py-3 text-sm font-semibold text-zinc-900 hover:bg-zinc-50">
+              Google
+            </button>
+            <button type="button" class="rounded-2xl border border-zinc-200 bg-white px-4 py-3 text-sm font-semibold text-zinc-900 hover:bg-zinc-50">
+              SSO
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="mt-4 text-center text-xs text-zinc-500">Minimal palette is the “marker” here — spacing + typography do the work.</div>
+    </div>
+  </div>
+</section>
+

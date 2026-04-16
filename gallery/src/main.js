@@ -28,6 +28,7 @@ const state = {
   q: '',
   style: null,
   color: null,
+  activeId: null,
 }
 
 const uniq = (arr) => Array.from(new Set(arr)).sort((a, b) => a.localeCompare(b))
@@ -155,9 +156,18 @@ const render = () => {
             <div class="mt-1 text-sm font-semibold text-zinc-950">${t.meta.name}</div>
             <div class="mt-1 text-xs text-zinc-500">${t.meta.id}</div>
           </div>
-          <a class="text-xs font-semibold text-zinc-700 underline-offset-4 hover:underline" href="${t.meta.source?.url || '#'}" target="_blank" rel="noreferrer">
-            Source
-          </a>
+          <div class="flex items-center gap-3">
+            <button
+              type="button"
+              data-open-template="${t.meta.id}"
+              class="rounded-lg border border-zinc-200 bg-white px-3 py-1.5 text-xs font-semibold text-zinc-900 hover:bg-zinc-50"
+            >
+              Open
+            </button>
+            <a class="text-xs font-semibold text-zinc-700 underline-offset-4 hover:underline" href="${t.meta.source?.url || '#'}" target="_blank" rel="noreferrer">
+              Source
+            </a>
+          </div>
         </div>
         <div class="mt-3 flex flex-wrap gap-2">
           ${tagLine
@@ -186,6 +196,70 @@ const render = () => {
       state.q = e.target.value || ''
       render()
     })
+  }
+
+  const openButtons = root.querySelectorAll('[data-open-template]')
+  for (const btn of openButtons) {
+    btn.addEventListener('click', () => {
+      const id = btn.getAttribute('data-open-template')
+      if (!id) return
+      state.activeId = id
+      location.hash = `#${id}`
+      render()
+    })
+  }
+
+  const fromHash = location.hash?.startsWith('#') ? location.hash.slice(1) : null
+  if (fromHash && !state.activeId) state.activeId = fromHash
+
+  if (state.activeId) {
+    const t = templates.find((x) => x.meta.id === state.activeId)
+    if (t) {
+      const modal = document.createElement('div')
+      modal.className = 'fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4'
+      modal.innerHTML = `
+        <div class="absolute inset-0" data-close-template="1"></div>
+        <div class="relative max-h-[92svh] w-full max-w-6xl overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-2xl">
+          <div class="flex items-start justify-between gap-4 border-b border-zinc-200 bg-white px-5 py-4">
+            <div>
+              <div class="text-xs font-semibold text-zinc-500">${t.meta.type}</div>
+              <div class="mt-1 text-sm font-semibold text-zinc-950">${t.meta.name}</div>
+              <div class="mt-1 text-xs text-zinc-500">${t.meta.id}</div>
+            </div>
+            <div class="flex items-center gap-3">
+              <a class="text-xs font-semibold text-zinc-700 underline-offset-4 hover:underline" href="${t.meta.source?.url || '#'}" target="_blank" rel="noreferrer">
+                Source
+              </a>
+              <button type="button" data-close-template="1" class="rounded-xl bg-zinc-950 px-4 py-2 text-xs font-semibold text-white hover:bg-zinc-900">
+                Close
+              </button>
+            </div>
+          </div>
+          <div class="max-h-[calc(92svh-64px)] overflow-auto bg-zinc-50 p-4">
+            <div class="rounded-xl border border-zinc-200 bg-white">${t.html}</div>
+          </div>
+        </div>
+      `
+      root.appendChild(modal)
+
+      const closeButtons = modal.querySelectorAll('[data-close-template]')
+      for (const c of closeButtons) {
+        c.addEventListener('click', () => {
+          state.activeId = null
+          history.replaceState(null, '', location.pathname + location.search)
+          render()
+        })
+      }
+
+      const esc = (e) => {
+        if (e.key === 'Escape') {
+          state.activeId = null
+          history.replaceState(null, '', location.pathname + location.search)
+          render()
+        }
+      }
+      window.addEventListener('keydown', esc, { once: true })
+    }
   }
 }
 

@@ -1,0 +1,15 @@
+{
+  "id": "024-banner-mailchimp",
+  "name": "Marketing Banner (Mailchimp-yellow)",
+  "type": "Banner/Announcement",
+  "source": {
+    "url": "https://ux.mailchimp.com/patterns/",
+    "title": "Mailchimp Pattern Library"
+  },
+  "tags": {
+    "style": ["营销风", "品牌强", "现代"],
+    "color": ["黄色系", "黑白灰"],
+    "features": ["高对比横幅", "品牌色块", "双CTA"]
+  }
+}
+
