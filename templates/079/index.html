@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rich Text Editor Shell</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 min-h-screen p-4 md:p-8 flex justify-center">
+    <div class="max-w-4xl w-full bg-white rounded-lg shadow-md border border-gray-200 flex flex-col h-[80vh]">
+        <!-- Toolbar -->
+        <div class="border-b border-gray-200 bg-gray-50 rounded-t-lg p-2 flex flex-wrap gap-1 items-center sticky top-0 z-10">
+            <!-- Format Group -->
+            <div class="flex items-center space-x-1 border-r border-gray-300 pr-2 mr-1">
+                <select class="text-sm bg-white border border-gray-300 rounded px-2 py-1.5 focus:outline-none focus:ring-1 focus:ring-blue-500">
+                    <option>Normal Text</option>
+                    <option>Heading 1</option>
+                    <option>Heading 2</option>
+                    <option>Heading 3</option>
+                </select>
+                <select class="text-sm bg-white border border-gray-300 rounded px-2 py-1.5 focus:outline-none focus:ring-1 focus:ring-blue-500 w-24">
+                    <option>Inter</option>
+                    <option>Arial</option>
+                    <option>Georgia</option>
+                </select>
+            </div>
+
+            <!-- Style Group -->
+            <div class="flex items-center space-x-1 border-r border-gray-300 pr-2 mr-1">
+                <button class="p-1.5 text-gray-700 hover:bg-gray-200 rounded bg-gray-200 transition-colors" title="Bold">
+                    <i class="fas fa-bold w-4 text-center"></i>
+                </button>
+                <button class="p-1.5 text-gray-700 hover:bg-gray-200 rounded transition-colors" title="Italic">
+                    <i class="fas fa-italic w-4 text-center"></i>
+                </button>
+                <button class="p-1.5 text-gray-700 hover:bg-gray-200 rounded transition-colors" title="Underline">
+                    <i class="fas fa-underline w-4 text-center"></i>
+                </button>
+                <button class="p-1.5 text-gray-700 hover:bg-gray-200 rounded transition-colors" title="Strikethrough">
+                    <i class="fas fa-strikethrough w-4 text-center"></i>
+                </button>
+                <button class="p-1.5 text-gray-700 hover:bg-gray-200 rounded transition-colors border-l border-gray-300 ml-1 pl-2" title="Text Color">
+                    <div class="flex flex-col items-center">
+                        <i class="fas fa-font text-xs"></i>
+                        <div class="w-3 h-1 bg-red-500 mt-0.5"></div>
+                    </div>
+                </button>
+            </div>
+
+            <!-- List & Alignment Group -->
+            <div class="flex items-center space-x-1 border-r border-gray-300 pr-2 mr-1">
+                <button class="p-1.5 text-gray-700 hover:bg-gray-200 rounded transition-colors" title="Align Left">
+                    <i class="fas fa-align-left w-4 text-center"></i>
+                </button>
+                <button class="p-1.5 text-gray-700 hover:bg-gray-200 rounded transition-colors" title="Align Center">
+                    <i class="fas fa-align-center w-4 text-center"></i>
+                </button>
+                <button class="p-1.5 text-gray-700 hover:bg-gray-200 rounded transition-colors" title="Align Right">
+                    <i class="fas fa-align-right w-4 text-center"></i>
+                </button>
+                <button class="p-1.5 text-gray-700 hover:bg-gray-200 rounded transition-colors ml-1" title="Bullet List">
+                    <i class="fas fa-list-ul w-4 text-center"></i>
+                </button>
+                <button class="p-1.5 text-gray-700 hover:bg-gray-200 rounded transition-colors" title="Numbered List">
+                    <i class="fas fa-list-ol w-4 text-center"></i>
+                </button>
+            </div>
+
+            <!-- Insert Group -->
+            <div class="flex items-center space-x-1">
+                <button class="p-1.5 text-gray-700 hover:bg-gray-200 rounded transition-colors" title="Insert Link">
+                    <i class="fas fa-link w-4 text-center"></i>
+                </button>
+                <button class="p-1.5 text-gray-700 hover:bg-gray-200 rounded transition-colors" title="Insert Image">
+                    <i class="fas fa-image w-4 text-center"></i>
+                </button>
+                <button class="p-1.5 text-gray-700 hover:bg-gray-200 rounded transition-colors" title="Insert Table">
+                    <i class="fas fa-table w-4 text-center"></i>
+                </button>
+                <button class="p-1.5 text-gray-700 hover:bg-gray-200 rounded transition-colors" title="Blockquote">
+                    <i class="fas fa-quote-right w-4 text-center"></i>
+                </button>
+            </div>
+            
+            <div class="flex-grow"></div>
+            
+            <!-- Actions -->
+            <div class="flex items-center space-x-2">
+                <button class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">Discard</button>
+                <button class="text-sm font-medium bg-blue-600 text-white px-3 py-1.5 rounded hover:bg-blue-700 transition-colors">Save</button>
+            </div>
+        </div>
+
+        <!-- Editor Area -->
+        <div class="flex-grow p-8 overflow-y-auto cursor-text outline-none prose max-w-none text-gray-800" contenteditable="true">
+            <h1>The Future of Web Design</h1>
+            <p>Web design is constantly evolving. In recent years, we've seen a massive shift towards more <strong>dynamic</strong> and <em>interactive</em> experiences. The use of frameworks like Tailwind CSS has revolutionized how we build interfaces.</p>
+            
+            <h2>Key Trends for 2024</h2>
+            <ul>
+                <li>Dark mode by default</li>
+                <li>Micro-interactions and subtle animations</li>
+                <li>Bento grid layouts</li>
+                <li>AI-generated imagery and content</li>
+            </ul>
+
+            <blockquote class="border-l-4 border-blue-500 pl-4 italic text-gray-600 my-4">
+                "Design is not just what it looks like and feels like. Design is how it works." - Steve Jobs
+            </blockquote>
+
+            <p>To implement these designs effectively, developers need robust tools. A good text editor is the foundation of content creation on the web.</p>
+            
+            <p>Start typing here...</p>
+        </div>
+
+        <!-- Footer / Status Bar -->
+        <div class="border-t border-gray-200 bg-gray-50 rounded-b-lg p-2 text-xs text-gray-500 flex justify-between">
+            <div>Words: 124 | Characters: 842</div>
+            <div>Saved at 10:42 AM</div>
+        </div>
+    </div>
+</body>
+</html>

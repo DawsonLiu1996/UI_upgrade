@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Comparison Table</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-slate-50 min-h-screen py-16 px-4 sm:px-6 lg:px-8">
+    
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h1 class="text-4xl font-extrabold text-slate-900 sm:text-5xl">Pricing that scales with you</h1>
+            <p class="mt-4 text-xl text-slate-500">Simple, transparent pricing for teams of all sizes. No hidden fees.</p>
+            
+            <!-- Toggle -->
+            <div class="mt-8 flex justify-center items-center gap-3">
+                <span class="text-sm font-medium text-slate-500">Monthly</span>
+                <button class="relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-indigo-600 transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2" role="switch" aria-checked="true">
+                    <span aria-hidden="true" class="translate-x-5 pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out"></span>
+                </button>
+                <span class="text-sm font-medium text-slate-900">Annually <span class="ml-1.5 inline-flex items-center rounded-full bg-green-100 px-2 py-0.5 text-xs font-medium text-green-800">Save 20%</span></span>
+            </div>
+        </div>
+
+        <div class="relative overflow-x-auto shadow-xl sm:rounded-2xl border border-slate-200 bg-white hide-scrollbar">
+            <table class="w-full text-left text-sm text-slate-600">
+                <thead class="bg-slate-50 border-b border-slate-200 sticky top-0 z-10">
+                    <tr>
+                        <th scope="col" class="p-6 w-1/4 min-w-[200px] align-bottom">
+                            <span class="sr-only">Features</span>
+                        </th>
+                        <!-- Starter -->
+                        <th scope="col" class="p-6 w-1/4 min-w-[250px] border-l border-slate-200 align-top">
+                            <div class="text-lg font-semibold text-slate-900 mb-2">Starter</div>
+                            <div class="flex items-baseline mb-4">
+                                <span class="text-3xl font-bold tracking-tight text-slate-900">$15</span>
+                                <span class="text-sm font-medium text-slate-500 ml-1">/mo</span>
+                            </div>
+                            <p class="text-sm text-slate-500 mb-6 font-normal">Perfect for individuals and small projects.</p>
+                            <button class="w-full rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-sm font-semibold text-slate-700 hover:bg-slate-50 transition-colors">Get Started</button>
+                        </th>
+                        <!-- Pro (Highlighted) -->
+                        <th scope="col" class="p-6 w-1/4 min-w-[250px] border-l border-indigo-200 bg-indigo-50/50 align-top relative">
+                            <div class="absolute top-0 left-0 w-full h-1 bg-indigo-600"></div>
+                            <div class="absolute top-4 right-4 inline-flex items-center rounded-full bg-indigo-100 px-2.5 py-0.5 text-xs font-medium text-indigo-800">Popular</div>
+                            <div class="text-lg font-semibold text-indigo-900 mb-2">Pro</div>
+                            <div class="flex items-baseline mb-4">
+                                <span class="text-3xl font-bold tracking-tight text-slate-900">$49</span>
+                                <span class="text-sm font-medium text-slate-500 ml-1">/mo</span>
+                            </div>
+                            <p class="text-sm text-slate-500 mb-6 font-normal">Ideal for growing teams and businesses.</p>
+                            <button class="w-full rounded-lg bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white hover:bg-indigo-700 shadow-sm transition-colors">Start Free Trial</button>
+                        </th>
+                        <!-- Enterprise -->
+                        <th scope="col" class="p-6 w-1/4 min-w-[250px] border-l border-slate-200 align-top">
+                            <div class="text-lg font-semibold text-slate-900 mb-2">Enterprise</div>
+                            <div class="flex items-baseline mb-4">
+                                <span class="text-3xl font-bold tracking-tight text-slate-900">$199</span>
+                                <span class="text-sm font-medium text-slate-500 ml-1">/mo</span>
+                            </div>
+                            <p class="text-sm text-slate-500 mb-6 font-normal">For large scale operations and security.</p>
+                            <button class="w-full rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-sm font-semibold text-slate-700 hover:bg-slate-50 transition-colors">Contact Sales</button>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-200">
+                    <!-- Core Features Header -->
+                    <tr class="bg-slate-50">
+                        <th colspan="4" scope="colgroup" class="px-6 py-3 text-sm font-bold text-slate-900">Core Features</th>
+                    </tr>
+                    <!-- Row -->
+                    <tr class="hover:bg-slate-50/50 transition-colors">
+                        <td class="px-6 py-4 font-medium text-slate-900 flex items-center gap-2">
+                            Users <i class="fas fa-info-circle text-slate-400 text-xs" title="Number of team members"></i>
+                        </td>
+                        <td class="px-6 py-4 border-l border-slate-200 text-center">Up to 3</td>
+                        <td class="px-6 py-4 border-l border-indigo-200 bg-indigo-50/30 text-center font-medium text-indigo-900">Up to 20</td>
+                        <td class="px-6 py-4 border-l border-slate-200 text-center">Unlimited</td>
+                    </tr>
+                    <!-- Row -->
+                    <tr class="hover:bg-slate-50/50 transition-colors">
+                        <td class="px-6 py-4 font-medium text-slate-900">Projects</td>
+                        <td class="px-6 py-4 border-l border-slate-200 text-center">10</td>
+                        <td class="px-6 py-4 border-l border-indigo-200 bg-indigo-50/30 text-center font-medium text-indigo-900">Unlimited</td>
+                        <td class="px-6 py-4 border-l border-slate-200 text-center">Unlimited</td>
+                    </tr>
+                    <!-- Row -->
+                    <tr class="hover:bg-slate-50/50 transition-colors">
+                        <td class="px-6 py-4 font-medium text-slate-900">Storage</td>
+                        <td class="px-6 py-4 border-l border-slate-200 text-center">5 GB</td>
+                        <td class="px-6 py-4 border-l border-indigo-200 bg-indigo-50/30 text-center font-medium text-indigo-900">50 GB</td>
+                        <td class="px-6 py-4 border-l border-slate-200 text-center">500 GB</td>
+                    </tr>
+
+                    <!-- Advanced Features Header -->
+                    <tr class="bg-slate-50 border-t border-slate-200">
+                        <th colspan="4" scope="colgroup" class="px-6 py-3 text-sm font-bold text-slate-900">Advanced Capabilities</th>
+                    </tr>
+                    <!-- Row (Checks) -->
+                    <tr class="hover:bg-slate-50/50 transition-colors">
+                        <td class="px-6 py-4 font-medium text-slate-900">Custom Domains</td>
+                        <td class="px-6 py-4 border-l border-slate-200 text-center">
+                            <i class="fas fa-minus text-slate-300"></i>
+                        </td>
+                        <td class="px-6 py-4 border-l border-indigo-200 bg-indigo-50/30 text-center">
+                            <i class="fas fa-check text-indigo-600"></i>
+                        </td>
+                        <td class="px-6 py-4 border-l border-slate-200 text-center">
+                            <i class="fas fa-check text-slate-800"></i>
+                        </td>
+                    </tr>
+                    <!-- Row -->
+                    <tr class="hover:bg-slate-50/50 transition-colors">
+                        <td class="px-6 py-4 font-medium text-slate-900">Analytics</td>
+                        <td class="px-6 py-4 border-l border-slate-200 text-center text-slate-500">Basic</td>
+                        <td class="px-6 py-4 border-l border-indigo-200 bg-indigo-50/30 text-center font-medium text-indigo-900">Advanced</td>
+                        <td class="px-6 py-4 border-l border-slate-200 text-center text-slate-900">Custom Reports</td>
+                    </tr>
+                    <!-- Row -->
+                    <tr class="hover:bg-slate-50/50 transition-colors">
+                        <td class="px-6 py-4 font-medium text-slate-900">API Access</td>
+                        <td class="px-6 py-4 border-l border-slate-200 text-center">
+                            <i class="fas fa-minus text-slate-300"></i>
+                        </td>
+                        <td class="px-6 py-4 border-l border-indigo-200 bg-indigo-50/30 text-center">
+                            <i class="fas fa-check text-indigo-600"></i>
+                        </td>
+                        <td class="px-6 py-4 border-l border-slate-200 text-center">
+                            <i class="fas fa-check text-slate-800"></i>
+                        </td>
+                    </tr>
+
+                    <!-- Support Header -->
+                    <tr class="bg-slate-50 border-t border-slate-200">
+                        <th colspan="4" scope="colgroup" class="px-6 py-3 text-sm font-bold text-slate-900">Support</th>
+                    </tr>
+                    <!-- Row -->
+                    <tr class="hover:bg-slate-50/50 transition-colors">
+                        <td class="px-6 py-4 font-medium text-slate-900">Response Time</td>
+                        <td class="px-6 py-4 border-l border-slate-200 text-center">48 hours</td>
+                        <td class="px-6 py-4 border-l border-indigo-200 bg-indigo-50/30 text-center font-medium text-indigo-900">24 hours</td>
+                        <td class="px-6 py-4 border-l border-slate-200 text-center">1 hour (SLA)</td>
+                    </tr>
+                    <!-- Row -->
+                    <tr class="hover:bg-slate-50/50 transition-colors">
+                        <td class="px-6 py-4 font-medium text-slate-900 rounded-bl-2xl">Dedicated Account Manager</td>
+                        <td class="px-6 py-4 border-l border-slate-200 text-center">
+                            <i class="fas fa-minus text-slate-300"></i>
+                        </td>
+                        <td class="px-6 py-4 border-l border-indigo-200 bg-indigo-50/30 text-center">
+                            <i class="fas fa-minus text-slate-300"></i>
+                        </td>
+                        <td class="px-6 py-4 border-l border-slate-200 text-center rounded-br-2xl">
+                            <i class="fas fa-check text-slate-800"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-100 h-screen flex flex-col font-sans text-gray-800">
+    <!-- Header -->
+    <header class="bg-white border-b border-gray-200 px-6 py-4 flex items-center justify-between flex-shrink-0 z-10 shadow-sm">
+        <div class="flex items-center gap-4">
+            <div class="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center text-white shadow-md">
+                <i class="fa-solid fa-layer-group text-xl"></i>
+            </div>
+            <div>
+                <h1 class="text-xl font-bold text-gray-900 leading-tight">Product Roadmap</h1>
+                <p class="text-sm text-gray-500">Q4 2023 Planning</p>
+            </div>
+        </div>
+        
+        <div class="flex items-center gap-4">
+            <!-- Avatars -->
+            <div class="flex -space-x-2 mr-2">
+                <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white shadow-sm" src="https://i.pravatar.cc/150?img=11" alt=""/>
+                <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white shadow-sm" src="https://i.pravatar.cc/150?img=12" alt=""/>
+                <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white shadow-sm" src="https://i.pravatar.cc/150?img=13" alt=""/>
+                <button class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 ring-2 ring-white text-xs font-medium text-gray-500 hover:bg-gray-200 transition">
+                    +2
+                </button>
+            </div>
+            
+            <button class="px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium rounded-lg transition-colors shadow-sm flex items-center gap-2">
+                <i class="fa-solid fa-plus"></i> New Task
+            </button>
+            <button class="text-gray-400 hover:text-gray-600 transition-colors p-2 rounded-lg hover:bg-gray-100">
+                <i class="fa-solid fa-ellipsis-vertical text-lg"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Board Content -->
+    <main class="flex-1 overflow-x-auto overflow-y-hidden p-6">
+        <div class="flex items-start gap-6 h-full pb-4 min-w-max">
+            
+            <!-- Column 1: To Do -->
+            <div class="bg-gray-200/50 rounded-xl w-80 max-h-full flex flex-col flex-shrink-0 border border-gray-200/60 shadow-sm">
+                <div class="p-4 flex items-center justify-between border-b border-gray-200/50 cursor-grab active:cursor-grabbing">
+                    <h2 class="font-bold text-gray-700 flex items-center gap-2">
+                        <span class="w-2.5 h-2.5 rounded-full bg-slate-400"></span>
+                        To Do
+                        <span class="bg-gray-200 text-gray-600 text-xs font-semibold px-2 py-0.5 rounded-full ml-1">3</span>
+                    </h2>
+                    <button class="text-gray-400 hover:text-gray-600 transition"><i class="fa-solid fa-ellipsis"></i></button>
+                </div>
+                
+                <div class="p-3 flex-1 overflow-y-auto space-y-3 custom-scrollbar">
+                    <!-- Card 1 -->
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200 cursor-grab active:cursor-grabbing hover:shadow-md hover:border-indigo-300 transition-all group">
+                        <div class="flex justify-between items-start mb-2">
+                            <div class="flex gap-1.5 flex-wrap">
+                                <span class="px-2 py-0.5 bg-blue-100 text-blue-700 text-[10px] font-bold uppercase rounded-md">Design</span>
+                            </div>
+                            <button class="text-gray-300 hover:text-gray-500 opacity-0 group-hover:opacity-100 transition"><i class="fa-solid fa-pen text-xs"></i></button>
+                        </div>
+                        <h3 class="text-sm font-semibold text-gray-900 mb-1 leading-snug">Design new landing page wireframes</h3>
+                        <p class="text-xs text-gray-500 mb-3 line-clamp-2">Create low-fidelity wireframes for the new marketing site emphasizing the new features.</p>
+                        <div class="flex items-center justify-between mt-auto pt-2 border-t border-gray-100">
+                            <div class="flex items-center gap-3 text-xs text-gray-400 font-medium">
+                                <span class="flex items-center gap-1"><i class="fa-regular fa-comment"></i> 4</span>
+                                <span class="flex items-center gap-1"><i class="fa-solid fa-paperclip"></i> 2</span>
+                            </div>
+                            <img src="https://i.pravatar.cc/150?img=11" class="w-6 h-6 rounded-full border border-gray-200" alt="Assignee">
+                        </div>
+                    </div>
+                    
+                    <!-- Card 2 -->
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200 cursor-grab active:cursor-grabbing hover:shadow-md hover:border-indigo-300 transition-all group">
+                        <div class="flex justify-between items-start mb-2">
+                            <div class="flex gap-1.5 flex-wrap">
+                                <span class="px-2 py-0.5 bg-purple-100 text-purple-700 text-[10px] font-bold uppercase rounded-md">Research</span>
+                            </div>
+                            <button class="text-gray-300 hover:text-gray-500 opacity-0 group-hover:opacity-100 transition"><i class="fa-solid fa-pen text-xs"></i></button>
+                        </div>
+                        <h3 class="text-sm font-semibold text-gray-900 mb-1 leading-snug">Competitor Analysis Q4</h3>
+                        <div class="flex items-center justify-between mt-3 pt-2 border-t border-gray-100">
+                            <div class="flex items-center gap-3 text-xs text-gray-400 font-medium">
+                                <span class="flex items-center gap-1 text-red-500"><i class="fa-regular fa-clock"></i> Oct 12</span>
+                            </div>
+                            <img src="https://i.pravatar.cc/150?img=14" class="w-6 h-6 rounded-full border border-gray-200" alt="Assignee">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="p-3 pt-0">
+                    <button class="w-full py-2 flex items-center justify-center gap-2 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-700 rounded-lg transition-colors font-medium border border-transparent border-dashed hover:border-gray-300">
+                        <i class="fa-solid fa-plus"></i> Add Card
+                    </button>
+                </div>
+            </div>
+
+            <!-- Column 2: In Progress -->
+            <div class="bg-gray-200/50 rounded-xl w-80 max-h-full flex flex-col flex-shrink-0 border border-gray-200/60 shadow-sm">
+                <div class="p-4 flex items-center justify-between border-b border-gray-200/50 cursor-grab active:cursor-grabbing">
+                    <h2 class="font-bold text-gray-700 flex items-center gap-2">
+                        <span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
+                        In Progress
+                        <span class="bg-amber-100 text-amber-700 text-xs font-semibold px-2 py-0.5 rounded-full ml-1">2</span>
+                    </h2>
+                    <button class="text-gray-400 hover:text-gray-600 transition"><i class="fa-solid fa-ellipsis"></i></button>
+                </div>
+                
+                <div class="p-3 flex-1 overflow-y-auto space-y-3 custom-scrollbar">
+                    <!-- Card 3 -->
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200 cursor-grab active:cursor-grabbing hover:shadow-md hover:border-amber-300 transition-all group ring-1 ring-amber-400">
+                        <div class="flex justify-between items-start mb-2">
+                            <div class="flex gap-1.5 flex-wrap">
+                                <span class="px-2 py-0.5 bg-emerald-100 text-emerald-700 text-[10px] font-bold uppercase rounded-md">Backend</span>
+                                <span class="px-2 py-0.5 bg-red-100 text-red-700 text-[10px] font-bold uppercase rounded-md">High</span>
+                            </div>
+                            <button class="text-gray-300 hover:text-gray-500 opacity-0 group-hover:opacity-100 transition"><i class="fa-solid fa-pen text-xs"></i></button>
+                        </div>
+                        <h3 class="text-sm font-semibold text-gray-900 mb-1 leading-snug">Implement OAuth2 Authentication</h3>
+                        <p class="text-xs text-gray-500 mb-3 line-clamp-2">Set up Google and GitHub login providers for the new user portal.</p>
+                        
+                        <!-- Progress Bar -->
+                        <div class="mb-3">
+                            <div class="flex justify-between text-[10px] text-gray-500 mb-1 font-medium">
+                                <span>Progress</span>
+                                <span>65%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-1.5">
+                                <div class="bg-amber-500 h-1.5 rounded-full" style="width: 65%"></div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between mt-auto pt-2 border-t border-gray-100">
+                            <div class="flex items-center gap-3 text-xs text-gray-400 font-medium">
+                                <span class="flex items-center gap-1"><i class="fa-solid fa-list-check"></i> 3/5</span>
+                            </div>
+                            <div class="flex -space-x-1">
+                                <img src="https://i.pravatar.cc/150?img=12" class="w-6 h-6 rounded-full border border-white" alt="Assignee">
+                                <img src="https://i.pravatar.cc/150?img=13" class="w-6 h-6 rounded-full border border-white" alt="Assignee">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200 cursor-grab active:cursor-grabbing hover:shadow-md hover:border-amber-300 transition-all group">
+                        <div class="flex justify-between items-start mb-2">
+                            <div class="flex gap-1.5 flex-wrap">
+                                <span class="px-2 py-0.5 bg-blue-100 text-blue-700 text-[10px] font-bold uppercase rounded-md">Frontend</span>
+                            </div>
+                            <button class="text-gray-300 hover:text-gray-500 opacity-0 group-hover:opacity-100 transition"><i class="fa-solid fa-pen text-xs"></i></button>
+                        </div>
+                        <h3 class="text-sm font-semibold text-gray-900 mb-1 leading-snug">Build Pricing Table Component</h3>
+                        <div class="flex items-center justify-between mt-3 pt-2 border-t border-gray-100">
+                            <div class="flex items-center gap-3 text-xs text-gray-400 font-medium">
+                                <span class="flex items-center gap-1 text-amber-600"><i class="fa-regular fa-clock"></i> Tomorrow</span>
+                            </div>
+                            <img src="https://i.pravatar.cc/150?img=11" class="w-6 h-6 rounded-full border border-gray-200" alt="Assignee">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="p-3 pt-0">
+                    <button class="w-full py-2 flex items-center justify-center gap-2 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-700 rounded-lg transition-colors font-medium border border-transparent border-dashed hover:border-gray-300">
+                        <i class="fa-solid fa-plus"></i> Add Card
+                    </button>
+                </div>
+            </div>
+
+            <!-- Column 3: Review -->
+            <div class="bg-gray-200/50 rounded-xl w-80 max-h-full flex flex-col flex-shrink-0 border border-gray-200/60 shadow-sm">
+                <div class="p-4 flex items-center justify-between border-b border-gray-200/50 cursor-grab active:cursor-grabbing">
+                    <h2 class="font-bold text-gray-700 flex items-center gap-2">
+                        <span class="w-2.5 h-2.5 rounded-full bg-purple-400"></span>
+                        Review
+                        <span class="bg-gray-200 text-gray-600 text-xs font-semibold px-2 py-0.5 rounded-full ml-1">1</span>
+                    </h2>
+                    <button class="text-gray-400 hover:text-gray-600 transition"><i class="fa-solid fa-ellipsis"></i></button>
+                </div>
+                
+                <div class="p-3 flex-1 overflow-y-auto space-y-3 custom-scrollbar">
+                    <!-- Card 5 -->
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200 cursor-grab active:cursor-grabbing hover:shadow-md hover:border-purple-300 transition-all group">
+                        <div class="flex justify-between items-start mb-2">
+                            <div class="flex gap-1.5 flex-wrap">
+                                <span class="px-2 py-0.5 bg-orange-100 text-orange-700 text-[10px] font-bold uppercase rounded-md">Bug</span>
+                            </div>
+                            <button class="text-gray-300 hover:text-gray-500 opacity-0 group-hover:opacity-100 transition"><i class="fa-solid fa-pen text-xs"></i></button>
+                        </div>
+                        <h3 class="text-sm font-semibold text-gray-900 mb-1 leading-snug">Fix navigation overlap on mobile screens</h3>
+                        <p class="text-xs text-gray-500 mb-3 line-clamp-2">The hamburger menu overlaps with the logo on screens smaller than 375px.</p>
+                        
+                        <!-- Image Attachment -->
+                        <div class="mb-3 rounded overflow-hidden border border-gray-200 h-20">
+                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="w-full h-full object-cover" alt="Bug screenshot">
+                        </div>
+
+                        <div class="flex items-center justify-between mt-auto pt-2 border-t border-gray-100">
+                            <div class="flex items-center gap-3 text-xs text-gray-400 font-medium">
+                                <span class="flex items-center gap-1"><i class="fa-solid fa-code-pull-request"></i> PR #42</span>
+                            </div>
+                            <img src="https://i.pravatar.cc/150?img=15" class="w-6 h-6 rounded-full border border-gray-200" alt="Assignee">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="p-3 pt-0">
+                    <button class="w-full py-2 flex items-center justify-center gap-2 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-700 rounded-lg transition-colors font-medium border border-transparent border-dashed hover:border-gray-300">
+                        <i class="fa-solid fa-plus"></i> Add Card
+                    </button>
+                </div>
+            </div>
+
+            <!-- Column 4: Done -->
+            <div class="bg-gray-200/50 rounded-xl w-80 max-h-full flex flex-col flex-shrink-0 border border-gray-200/60 shadow-sm opacity-80">
+                <div class="p-4 flex items-center justify-between border-b border-gray-200/50 cursor-grab active:cursor-grabbing">
+                    <h2 class="font-bold text-gray-700 flex items-center gap-2">
+                        <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+                        Done
+                        <span class="bg-gray-200 text-gray-600 text-xs font-semibold px-2 py-0.5 rounded-full ml-1">12</span>
+                    </h2>
+                    <button class="text-gray-400 hover:text-gray-600 transition"><i class="fa-solid fa-ellipsis"></i></button>
+                </div>
+                
+                <div class="p-3 flex-1 overflow-y-auto space-y-3 custom-scrollbar">
+                    <!-- Card 6 -->
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200 cursor-grab active:cursor-grabbing hover:shadow-md hover:border-emerald-300 transition-all group">
+                        <div class="flex justify-between items-start mb-2">
+                            <div class="flex gap-1.5 flex-wrap">
+                                <span class="px-2 py-0.5 bg-slate-100 text-slate-700 text-[10px] font-bold uppercase rounded-md line-through">Database</span>
+                            </div>
+                        </div>
+                        <h3 class="text-sm font-semibold text-gray-500 mb-1 leading-snug line-through">Migrate users to new schema</h3>
+                        <div class="flex items-center justify-between mt-3 pt-2 border-t border-gray-100">
+                            <div class="flex items-center gap-3 text-xs text-emerald-500 font-medium">
+                                <span class="flex items-center gap-1"><i class="fa-solid fa-check-circle"></i> Completed Oct 1</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="p-3 pt-0">
+                    <button class="w-full py-2 flex items-center justify-center gap-2 text-sm text-gray-500 hover:bg-gray-200 hover:text-gray-700 rounded-lg transition-colors font-medium border border-transparent border-dashed hover:border-gray-300">
+                        <i class="fa-solid fa-plus"></i> Add Card
+                    </button>
+                </div>
+            </div>
+
+            <!-- Add Column Button -->
+            <button class="w-80 flex-shrink-0 h-14 rounded-xl border-2 border-dashed border-gray-300 text-gray-500 hover:text-gray-700 hover:border-gray-400 hover:bg-gray-200/50 flex items-center justify-center gap-2 font-medium transition-colors">
+                <i class="fa-solid fa-plus"></i> Add Section
+            </button>
+
+        </div>
+    </main>
+
+    <style>
+        /* Custom Scrollbar for columns */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background-color: #cbd5e1;
+            border-radius: 20px;
+        }
+    </style>
+</body>
+</html>

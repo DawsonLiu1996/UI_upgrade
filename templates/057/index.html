@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 min-h-screen font-sans text-gray-800">
+    
+    <!-- Top Navigation (Simplified) -->
+    <nav class="bg-white shadow-sm border-b border-gray-200 px-6 py-3 flex justify-between items-center sticky top-0 z-50">
+        <div class="text-xl font-bold text-indigo-600"><i class="fa-solid fa-bolt mr-2"></i>Nexus</div>
+        <div class="flex items-center gap-4">
+            <button class="text-gray-400 hover:text-gray-600"><i class="fa-solid fa-bell"></i></button>
+            <img src="https://i.pravatar.cc/150?img=33" class="w-8 h-8 rounded-full cursor-pointer border border-gray-200" alt="Avatar">
+        </div>
+    </nav>
+
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        
+        <!-- Profile Header Card -->
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mb-8">
+            <!-- Cover Image -->
+            <div class="h-48 w-full bg-cover bg-center relative" style="background-image: url('https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');">
+                <button class="absolute bottom-4 right-4 bg-black/50 hover:bg-black/70 text-white text-xs font-medium px-3 py-1.5 rounded-lg backdrop-blur-sm transition-colors flex items-center gap-2">
+                    <i class="fa-solid fa-camera"></i> Edit Cover
+                </button>
+            </div>
+            
+            <!-- Profile Info -->
+            <div class="px-8 pb-8 relative">
+                <!-- Avatar -->
+                <div class="relative -mt-16 mb-4 inline-block">
+                    <img src="https://i.pravatar.cc/150?img=33" alt="Profile" class="w-32 h-32 rounded-full border-4 border-white shadow-md object-cover bg-white">
+                    <button class="absolute bottom-0 right-0 bg-white text-gray-600 hover:text-indigo-600 p-2 rounded-full shadow-md border border-gray-200 transition-colors">
+                        <i class="fa-solid fa-pen text-xs"></i>
+                    </button>
+                </div>
+
+                <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+                    <div>
+                        <h1 class="text-3xl font-bold text-gray-900 flex items-center gap-2">
+                            Eleanor Pena
+                            <i class="fa-solid fa-circle-check text-blue-500 text-lg" title="Verified"></i>
+                        </h1>
+                        <p class="text-gray-500 font-medium mb-1">@eleanor_design • Senior UX Researcher</p>
+                        <p class="text-gray-600 text-sm max-w-md">Passionate about creating human-centric digital experiences. Coffee enthusiast and amateur photographer. Based in San Francisco. 🌉</p>
+                        
+                        <div class="flex items-center gap-4 mt-4 text-sm text-gray-500">
+                            <span class="flex items-center gap-1"><i class="fa-solid fa-location-dot"></i> San Francisco, CA</span>
+                            <span class="flex items-center gap-1"><i class="fa-solid fa-link"></i> <a href="#" class="text-indigo-600 hover:underline">eleanor.design</a></span>
+                            <span class="flex items-center gap-1"><i class="fa-regular fa-calendar"></i> Joined March 2021</span>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-3 shrink-0">
+                        <button class="px-5 py-2 bg-indigo-600 text-white font-medium rounded-xl hover:bg-indigo-700 transition-colors shadow-sm">
+                            Follow
+                        </button>
+                        <button class="px-5 py-2 bg-white border border-gray-300 text-gray-700 font-medium rounded-xl hover:bg-gray-50 transition-colors shadow-sm">
+                            Message
+                        </button>
+                        <button class="px-3 py-2 bg-white border border-gray-300 text-gray-700 font-medium rounded-xl hover:bg-gray-50 transition-colors shadow-sm">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats & Tabs border -->
+            <div class="border-t border-gray-200 px-8 flex justify-between items-center bg-gray-50/50">
+                <div class="flex gap-8">
+                    <button class="py-4 font-semibold text-indigo-600 border-b-2 border-indigo-600 transition-colors">Overview</button>
+                    <button class="py-4 font-medium text-gray-500 hover:text-gray-700 transition-colors">Projects</button>
+                    <button class="py-4 font-medium text-gray-500 hover:text-gray-700 transition-colors">Activity</button>
+                    <button class="py-4 font-medium text-gray-500 hover:text-gray-700 transition-colors">Network</button>
+                </div>
+                
+                <div class="hidden md:flex gap-6 py-3">
+                    <div class="text-center">
+                        <span class="block text-lg font-bold text-gray-900">142</span>
+                        <span class="text-xs text-gray-500 uppercase tracking-wide">Posts</span>
+                    </div>
+                    <div class="text-center">
+                        <span class="block text-lg font-bold text-gray-900">12.8k</span>
+                        <span class="text-xs text-gray-500 uppercase tracking-wide">Followers</span>
+                    </div>
+                    <div class="text-center">
+                        <span class="block text-lg font-bold text-gray-900">843</span>
+                        <span class="text-xs text-gray-500 uppercase tracking-wide">Following</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            
+            <!-- Left Sidebar -->
+            <div class="space-y-8">
+                <!-- About Card -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-6">
+                    <h2 class="text-lg font-bold text-gray-900 mb-4">About</h2>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        I specialize in qualitative user research and usability testing. With over 8 years of experience in the tech industry, I help product teams understand their users' needs and behaviors.
+                    </p>
+                    <div class="space-y-3 text-sm">
+                        <div class="flex justify-between items-center pb-3 border-b border-gray-100">
+                            <span class="text-gray-500">Email</span>
+                            <span class="font-medium text-gray-900">eleanor@example.com</span>
+                        </div>
+                        <div class="flex justify-between items-center pb-3 border-b border-gray-100">
+                            <span class="text-gray-500">Phone</span>
+                            <span class="font-medium text-gray-900">+1 (555) 123-4567</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-500">Timezone</span>
+                            <span class="font-medium text-gray-900">PST (UTC-8)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills Card -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-6">
+                    <h2 class="text-lg font-bold text-gray-900 mb-4">Skills</h2>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-indigo-50 text-indigo-700 text-xs font-medium rounded-lg border border-indigo-100">User Research</span>
+                        <span class="px-3 py-1 bg-indigo-50 text-indigo-700 text-xs font-medium rounded-lg border border-indigo-100">Figma</span>
+                        <span class="px-3 py-1 bg-indigo-50 text-indigo-700 text-xs font-medium rounded-lg border border-indigo-100">Prototyping</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs font-medium rounded-lg border border-gray-200">Data Analysis</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs font-medium rounded-lg border border-gray-200">Wireframing</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs font-medium rounded-lg border border-gray-200">A/B Testing</span>
+                    </div>
+                </div>
+
+                <!-- Mutual Connections -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-6">
+                    <h2 class="text-lg font-bold text-gray-900 mb-4 flex justify-between items-center">
+                        Connections
+                        <a href="#" class="text-indigo-600 text-sm font-medium hover:underline">See all</a>
+                    </h2>
+                    <div class="flex -space-x-3 mb-3">
+                        <img class="w-10 h-10 rounded-full border-2 border-white" src="https://i.pravatar.cc/150?img=11" alt="User">
+                        <img class="w-10 h-10 rounded-full border-2 border-white" src="https://i.pravatar.cc/150?img=12" alt="User">
+                        <img class="w-10 h-10 rounded-full border-2 border-white" src="https://i.pravatar.cc/150?img=13" alt="User">
+                        <img class="w-10 h-10 rounded-full border-2 border-white" src="https://i.pravatar.cc/150?img=14" alt="User">
+                        <img class="w-10 h-10 rounded-full border-2 border-white" src="https://i.pravatar.cc/150?img=15" alt="User">
+                        <div class="w-10 h-10 rounded-full border-2 border-white bg-gray-100 flex items-center justify-center text-xs font-medium text-gray-600">+12</div>
+                    </div>
+                    <p class="text-xs text-gray-500">17 mutual connections including <span class="font-medium text-gray-800">Sarah</span> and <span class="font-medium text-gray-800">Mike</span>.</p>
+                </div>
+            </div>
+
+            <!-- Main Feed -->
+            <div class="lg:col-span-2 space-y-6">
+                
+                <!-- Create Post Input -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-4">
+                    <div class="flex gap-4">
+                        <img src="https://i.pravatar.cc/150?img=33" class="w-10 h-10 rounded-full" alt="User">
+                        <input type="text" placeholder="Write something on Eleanor's profile..." class="w-full bg-gray-50 rounded-xl px-4 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-100 border border-transparent focus:border-indigo-300 transition-all">
+                    </div>
+                    <div class="flex justify-between items-center mt-3 pt-3 border-t border-gray-100">
+                        <div class="flex gap-2">
+                            <button class="p-2 text-gray-500 hover:text-blue-500 hover:bg-blue-50 rounded-lg transition-colors"><i class="fa-regular fa-image"></i></button>
+                            <button class="p-2 text-gray-500 hover:text-green-500 hover:bg-green-50 rounded-lg transition-colors"><i class="fa-solid fa-paperclip"></i></button>
+                            <button class="p-2 text-gray-500 hover:text-yellow-500 hover:bg-yellow-50 rounded-lg transition-colors"><i class="fa-regular fa-face-smile"></i></button>
+                        </div>
+                        <button class="px-4 py-1.5 bg-indigo-600 text-white text-sm font-medium rounded-lg hover:bg-indigo-700 transition-colors">Post</button>
+                    </div>
+                </div>
+
+                <!-- Post 1 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-6">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="flex gap-3 items-center">
+                            <img src="https://i.pravatar.cc/150?img=33" class="w-10 h-10 rounded-full" alt="User">
+                            <div>
+                                <h3 class="font-bold text-gray-900 text-sm">Eleanor Pena</h3>
+                                <p class="text-xs text-gray-500">2 hours ago • <i class="fa-solid fa-earth-americas ml-1"></i></p>
+                            </div>
+                        </div>
+                        <button class="text-gray-400 hover:text-gray-600"><i class="fa-solid fa-ellipsis"></i></button>
+                    </div>
+                    
+                    <p class="text-gray-800 text-sm mb-4 leading-relaxed">
+                        Just published a new case study on how we improved the onboarding conversion rate by 40% using behavioral nudges. Check it out! 🚀
+                    </p>
+                    
+                    <!-- Link Preview -->
+                    <div class="border border-gray-200 rounded-xl overflow-hidden mb-4 hover:bg-gray-50 transition-colors cursor-pointer block group">
+                        <div class="h-40 bg-gray-200 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                        <div class="p-4">
+                            <span class="text-xs font-bold text-indigo-600 uppercase tracking-wide">Medium.com</span>
+                            <h4 class="font-bold text-gray-900 text-sm mt-1 group-hover:text-indigo-600 transition-colors">Behavioral Design in User Onboarding</h4>
+                            <p class="text-xs text-gray-500 mt-1 line-clamp-2">A deep dive into the psychology of user retention and how small design tweaks can make a massive impact on your product's success metrics.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between text-sm text-gray-500 border-y border-gray-100 py-2 mb-2">
+                        <div class="flex items-center gap-1">
+                            <span class="flex items-center justify-center w-5 h-5 rounded-full bg-blue-500 text-white text-[10px]"><i class="fa-solid fa-thumbs-up"></i></span>
+                            <span class="flex items-center justify-center w-5 h-5 rounded-full bg-red-500 text-white text-[10px] -ml-2 border border-white"><i class="fa-solid fa-heart"></i></span>
+                            <span class="ml-1">248</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <span>42 Comments</span>
+                            <span>18 Shares</span>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-2">
+                        <button class="flex-1 py-2 text-sm font-medium text-gray-600 hover:bg-gray-50 rounded-lg transition-colors flex items-center justify-center gap-2">
+                            <i class="fa-regular fa-thumbs-up"></i> Like
+                        </button>
+                        <button class="flex-1 py-2 text-sm font-medium text-gray-600 hover:bg-gray-50 rounded-lg transition-colors flex items-center justify-center gap-2">
+                            <i class="fa-regular fa-comment"></i> Comment
+                        </button>
+                        <button class="flex-1 py-2 text-sm font-medium text-gray-600 hover:bg-gray-50 rounded-lg transition-colors flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-share"></i> Share
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Post 2 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-6">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="flex gap-3 items-center">
+                            <img src="https://i.pravatar.cc/150?img=33" class="w-10 h-10 rounded-full" alt="User">
+                            <div>
+                                <h3 class="font-bold text-gray-900 text-sm">Eleanor Pena</h3>
+                                <p class="text-xs text-gray-500">Yesterday at 3:45 PM • <i class="fa-solid fa-user-group ml-1"></i></p>
+                            </div>
+                        </div>
+                        <button class="text-gray-400 hover:text-gray-600"><i class="fa-solid fa-ellipsis"></i></button>
+                    </div>
+                    
+                    <p class="text-gray-800 text-sm mb-4 leading-relaxed">
+                        Excited to announce that I'll be speaking at the upcoming UX Summit 2023! I'll be sharing insights on remote user testing methodologies. Let me know if you'll be there! 🎤✨
+                    </p>
+                    
+                    <div class="flex gap-2">
+                        <button class="flex-1 py-2 text-sm font-medium text-gray-600 hover:bg-gray-50 rounded-lg transition-colors flex items-center justify-center gap-2">
+                            <i class="fa-regular fa-thumbs-up"></i> Like
+                        </button>
+                        <button class="flex-1 py-2 text-sm font-medium text-gray-600 hover:bg-gray-50 rounded-lg transition-colors flex items-center justify-center gap-2">
+                            <i class="fa-regular fa-comment"></i> Comment
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

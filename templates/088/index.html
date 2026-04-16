@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results List</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 min-h-screen py-8 px-4 sm:px-6 lg:px-8">
+    
+    <div class="max-w-4xl mx-auto">
+        <!-- Search Header -->
+        <div class="mb-8">
+            <div class="relative max-w-2xl">
+                <input type="text" class="w-full pl-12 pr-4 py-3 rounded-xl border border-gray-200 shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none text-gray-800 transition-shadow" value="machine learning tutorial" placeholder="Search...">
+                <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                    <i class="fas fa-search text-gray-400"></i>
+                </div>
+                <button class="absolute inset-y-2 right-2 px-4 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-lg transition-colors">
+                    Search
+                </button>
+            </div>
+            
+            <div class="flex flex-wrap items-center justify-between mt-4 text-sm text-gray-500">
+                <p>Showing <span class="font-semibold text-gray-800">1-10</span> of <span class="font-semibold text-gray-800">2,405</span> results (0.34 seconds)</p>
+                <div class="flex items-center gap-2 mt-2 sm:mt-0">
+                    <span class="mr-2">Sort by:</span>
+                    <select class="border-none bg-transparent font-medium text-gray-800 focus:ring-0 cursor-pointer outline-none">
+                        <option>Relevance</option>
+                        <option>Date (Newest)</option>
+                        <option>Most Viewed</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filters & Results Layout -->
+        <div class="flex flex-col md:flex-row gap-8">
+            
+            <!-- Sidebar Filters -->
+            <div class="w-full md:w-64 shrink-0 space-y-6">
+                <!-- Filter Group 1 -->
+                <div>
+                    <h3 class="text-sm font-bold text-gray-900 uppercase tracking-wider mb-3">Content Type</h3>
+                    <div class="space-y-2">
+                        <label class="flex items-center">
+                            <input type="checkbox" class="rounded border-gray-300 text-blue-600 focus:ring-blue-500" checked>
+                            <span class="ml-2 text-sm text-gray-700">Articles (1,204)</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="rounded border-gray-300 text-blue-600 focus:ring-blue-500" checked>
+                            <span class="ml-2 text-sm text-gray-700">Videos (856)</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                            <span class="ml-2 text-sm text-gray-700">Documentation (345)</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Filter Group 2 -->
+                <div>
+                    <h3 class="text-sm font-bold text-gray-900 uppercase tracking-wider mb-3">Level</h3>
+                    <div class="space-y-2">
+                        <label class="flex items-center">
+                            <input type="radio" name="level" class="border-gray-300 text-blue-600 focus:ring-blue-500" checked>
+                            <span class="ml-2 text-sm text-gray-700">All Levels</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="radio" name="level" class="border-gray-300 text-blue-600 focus:ring-blue-500">
+                            <span class="ml-2 text-sm text-gray-700">Beginner</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="radio" name="level" class="border-gray-300 text-blue-600 focus:ring-blue-500">
+                            <span class="ml-2 text-sm text-gray-700">Intermediate</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="radio" name="level" class="border-gray-300 text-blue-600 focus:ring-blue-500">
+                            <span class="ml-2 text-sm text-gray-700">Advanced</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results List -->
+            <div class="flex-1 space-y-6">
+                
+                <!-- Result Item 1 (Video) -->
+                <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow group flex flex-col sm:flex-row gap-5">
+                    <div class="relative w-full sm:w-48 h-32 shrink-0 rounded-lg overflow-hidden bg-gray-100">
+                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Thumbnail" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors">
+                            <div class="w-10 h-10 bg-white/90 rounded-full flex items-center justify-center text-blue-600 shadow-sm">
+                                <i class="fas fa-play ml-1"></i>
+                            </div>
+                        </div>
+                        <span class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-1.5 py-0.5 rounded font-medium">45:20</span>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="text-xs font-bold text-blue-600 uppercase tracking-wider bg-blue-50 px-2 py-0.5 rounded">Video</span>
+                            <span class="text-xs text-gray-500">Oct 12, 2023</span>
+                        </div>
+                        <h2 class="text-lg font-bold text-blue-800 hover:underline cursor-pointer mb-2 leading-tight">Complete Machine Learning Course for Beginners</h2>
+                        <p class="text-sm text-gray-600 mb-3 line-clamp-2">This comprehensive <span class="bg-yellow-100 font-semibold px-0.5">machine learning tutorial</span> covers everything from basic concepts to building your first neural network using Python and TensorFlow. Perfect for absolute beginners.</p>
+                        <div class="flex items-center gap-4 text-xs text-gray-500">
+                            <span class="flex items-center gap-1"><img src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" class="w-5 h-5 rounded-full"> Tech Academy</span>
+                            <span><i class="fas fa-eye mr-1"></i> 1.2M views</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Result Item 2 (Article) -->
+                <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider bg-emerald-50 px-2 py-0.5 rounded">Article</span>
+                        <span class="text-xs text-gray-500">Sep 28, 2023</span>
+                    </div>
+                    <h2 class="text-lg font-bold text-blue-800 hover:underline cursor-pointer mb-2 leading-tight">Top 10 Machine Learning Algorithms You Need to Know</h2>
+                    <p class="text-sm text-gray-600 mb-3 line-clamp-2">A practical guide to the most common algorithms used in data science. In this <span class="bg-yellow-100 font-semibold px-0.5">tutorial</span>, we break down regression, classification, and clustering with real-world examples and code snippets.</p>
+                    <div class="flex flex-wrap items-center gap-4 text-xs text-gray-500">
+                        <span class="flex items-center gap-1"><i class="fas fa-user-circle text-gray-400"></i> Sarah Data</span>
+                        <div class="flex gap-2">
+                            <span class="bg-gray-100 px-2 py-0.5 rounded text-gray-600 hover:bg-gray-200 cursor-pointer">Python</span>
+                            <span class="bg-gray-100 px-2 py-0.5 rounded text-gray-600 hover:bg-gray-200 cursor-pointer">Algorithms</span>
+                            <span class="bg-gray-100 px-2 py-0.5 rounded text-gray-600 hover:bg-gray-200 cursor-pointer">Data Science</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Result Item 3 (Documentation) -->
+                <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="text-xs font-bold text-purple-600 uppercase tracking-wider bg-purple-50 px-2 py-0.5 rounded">Documentation</span>
+                        <span class="text-xs text-gray-500">Updated v2.4</span>
+                    </div>
+                    <h2 class="text-lg font-bold text-blue-800 hover:underline cursor-pointer mb-2 leading-tight">Getting Started with the ML Framework API</h2>
+                    <p class="text-sm text-gray-600 mb-3 line-clamp-2">Official documentation for initializing and configuring the model pipeline. Includes a quickstart <span class="bg-yellow-100 font-semibold px-0.5">tutorial</span> for setting up your environment and running your first prediction.</p>
+                    <div class="flex items-center gap-2 text-xs text-gray-500 mt-2">
+                        <i class="fas fa-folder text-gray-400"></i>
+                        <span class="text-gray-400">Docs > Guides > Basics</span>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <div class="flex items-center justify-between border-t border-gray-200 pt-6 mt-8">
+                    <button class="flex items-center justify-center px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 cursor-not-allowed opacity-50" disabled>
+                        <i class="fas fa-chevron-left mr-2 text-xs"></i> Previous
+                    </button>
+                    <div class="hidden sm:flex space-x-1">
+                        <button class="w-10 h-10 flex items-center justify-center rounded-md border-2 border-blue-600 bg-blue-50 text-blue-600 font-bold text-sm">1</button>
+                        <button class="w-10 h-10 flex items-center justify-center rounded-md border border-transparent text-gray-600 hover:bg-gray-100 font-medium text-sm">2</button>
+                        <button class="w-10 h-10 flex items-center justify-center rounded-md border border-transparent text-gray-600 hover:bg-gray-100 font-medium text-sm">3</button>
+                        <span class="w-10 h-10 flex items-center justify-center text-gray-500">...</span>
+                        <button class="w-10 h-10 flex items-center justify-center rounded-md border border-transparent text-gray-600 hover:bg-gray-100 font-medium text-sm">241</button>
+                    </div>
+                    <button class="flex items-center justify-center px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 transition-colors">
+                        Next <i class="fas fa-chevron-right ml-2 text-xs"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

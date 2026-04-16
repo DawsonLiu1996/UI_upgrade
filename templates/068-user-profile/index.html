@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-indigo-100 via-purple-50 to-teal-50 min-h-screen flex items-center justify-center p-6 font-sans">
+    
+    <div class="max-w-md w-full bg-white rounded-3xl shadow-xl overflow-hidden relative">
+        <!-- Cover Photo -->
+        <div class="h-32 w-full object-cover bg-gradient-to-r from-violet-500 to-fuchsia-500"></div>
+        
+        <!-- Profile Content -->
+        <div class="px-8 pb-8 pt-4 relative">
+            
+            <!-- Avatar -->
+            <div class="absolute -top-16 left-1/2 -translate-x-1/2">
+                <div class="w-24 h-24 rounded-full border-4 border-white overflow-hidden shadow-lg bg-white">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Profile" class="w-full h-full object-cover">
+                </div>
+                <div class="absolute bottom-1 right-1 w-5 h-5 bg-green-500 border-2 border-white rounded-full"></div>
+            </div>
+
+            <!-- Info -->
+            <div class="mt-12 text-center">
+                <h2 class="text-2xl font-bold text-gray-800">Elena Rodriguez</h2>
+                <p class="text-sm text-gray-500 mt-1 font-medium">Senior Product Designer at TechCorp</p>
+                
+                <p class="text-gray-600 mt-4 text-sm leading-relaxed">
+                    Crafting beautiful digital experiences. Passionate about accessibility and minimal design. Coffee enthusiast ☕
+                </p>
+
+                <!-- Tags -->
+                <div class="mt-5 flex flex-wrap justify-center gap-2">
+                    <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-full">UI/UX</span>
+                    <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-full">Figma</span>
+                    <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-full">Web3</span>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="flex justify-around items-center mt-6 pt-6 border-t border-gray-100">
+                <div class="text-center">
+                    <span class="block text-xl font-bold text-gray-800">248</span>
+                    <span class="block text-xs font-medium text-gray-500 uppercase tracking-wide mt-1">Posts</span>
+                </div>
+                <div class="text-center">
+                    <span class="block text-xl font-bold text-gray-800">12.5k</span>
+                    <span class="block text-xs font-medium text-gray-500 uppercase tracking-wide mt-1">Followers</span>
+                </div>
+                <div class="text-center">
+                    <span class="block text-xl font-bold text-gray-800">452</span>
+                    <span class="block text-xs font-medium text-gray-500 uppercase tracking-wide mt-1">Following</span>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="mt-8 flex gap-4">
+                <button class="flex-1 bg-violet-600 text-white font-semibold py-2.5 rounded-xl hover:bg-violet-700 transition-colors shadow-sm shadow-violet-200">
+                    Follow
+                </button>
+                <button class="flex-1 bg-white border border-gray-200 text-gray-700 font-semibold py-2.5 rounded-xl hover:bg-gray-50 transition-colors shadow-sm">
+                    Message
+                </button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

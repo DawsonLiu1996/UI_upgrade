@@ -1,0 +1,25 @@
+{
+  "id": "076",
+  "name": "Invoice Receipt",
+  "type": "Component",
+  "source": {
+    "url": "https://tailwindcss.com",
+    "title": "Custom Generated"
+  },
+  "tags": {
+    "style": [
+      "现代",
+      "极简",
+      "响应式"
+    ],
+    "color": [
+      "中性色",
+      "蓝紫渐变"
+    ],
+    "features": [
+      "invoice",
+      "receipt",
+      "billing"
+    ]
+  }
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications Panel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-100 h-screen flex items-start justify-center pt-20 font-sans text-gray-800 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]">
+    
+    <!-- Top Nav Mockup to anchor the dropdown -->
+    <div class="fixed top-0 left-0 right-0 h-16 bg-white border-b border-gray-200 shadow-sm flex items-center justify-end px-8 z-0">
+        <!-- Notification Bell Trigger (Active state) -->
+        <button class="relative p-2 text-gray-500 hover:text-indigo-600 transition-colors rounded-full hover:bg-gray-100 mr-4 focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-gray-100 text-indigo-600">
+            <i class="fa-solid fa-bell text-xl"></i>
+            <!-- Unread Badge -->
+            <span class="absolute top-1.5 right-1.5 flex h-2.5 w-2.5">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-red-500 border border-white"></span>
+            </span>
+        </button>
+        <img src="https://i.pravatar.cc/150?img=33" class="w-8 h-8 rounded-full border border-gray-200 cursor-pointer" alt="User">
+    </div>
+
+    <!-- Notifications Dropdown Panel -->
+    <div class="relative w-full max-w-md bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden flex flex-col z-10 animate-[slideDown_0.2s_ease-out]">
+        
+        <!-- Header -->
+        <div class="px-6 py-4 border-b border-gray-100 flex items-center justify-between bg-white shrink-0">
+            <div class="flex items-center gap-3">
+                <h2 class="text-lg font-bold text-gray-900">Notifications</h2>
+                <span class="bg-indigo-100 text-indigo-700 text-xs font-bold px-2 py-0.5 rounded-full">3 New</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <button class="text-xs font-medium text-indigo-600 hover:text-indigo-800 transition-colors">Mark all as read</button>
+                <button class="text-gray-400 hover:text-gray-600 p-1.5 rounded-md hover:bg-gray-50 transition-colors"><i class="fa-solid fa-gear"></i></button>
+            </div>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="px-4 py-2 border-b border-gray-100 flex gap-2 shrink-0 bg-gray-50/50">
+            <button class="px-3 py-1.5 text-xs font-semibold bg-white border border-gray-200 text-gray-800 shadow-sm rounded-lg">All</button>
+            <button class="px-3 py-1.5 text-xs font-medium text-gray-500 hover:text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">Mentions</button>
+            <button class="px-3 py-1.5 text-xs font-medium text-gray-500 hover:text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">System</button>
+        </div>
+
+        <!-- Notification List -->
+        <div class="overflow-y-auto max-h-[60vh] custom-scrollbar flex flex-col">
+            
+            <!-- Unread Notification 1: Mention/Message -->
+            <div class="p-4 border-b border-gray-50 bg-indigo-50/30 hover:bg-gray-50 transition-colors relative cursor-pointer group">
+                <!-- Unread Dot -->
+                <div class="absolute left-2 top-1/2 transform -translate-y-1/2 w-2 h-2 bg-indigo-600 rounded-full"></div>
+                
+                <div class="flex gap-4 ml-2">
+                    <div class="relative shrink-0 mt-1">
+                        <img src="https://i.pravatar.cc/150?img=12" class="w-10 h-10 rounded-full object-cover border border-gray-200" alt="Avatar">
+                        <div class="absolute -bottom-1 -right-1 w-5 h-5 bg-blue-500 rounded-full border-2 border-white flex items-center justify-center text-white text-[10px]">
+                            <i class="fa-solid fa-comment"></i>
+                        </div>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <p class="text-sm text-gray-800 leading-snug">
+                            <span class="font-bold text-gray-900">Alex Carter</span> mentioned you in <span class="font-bold text-indigo-600 cursor-pointer hover:underline">Q4 Roadmap Planning</span>.
+                        </p>
+                        <p class="text-sm text-gray-500 mt-1 line-clamp-2 italic border-l-2 border-gray-200 pl-2">"@eleanor what do you think about the new timeline proposed in slide 4?"</p>
+                        <div class="flex items-center gap-3 mt-2">
+                            <span class="text-xs text-indigo-600 font-medium">10m ago</span>
+                            <button class="text-xs font-medium text-gray-500 hover:text-gray-800 bg-white border border-gray-200 px-2 py-1 rounded shadow-sm hover:shadow transition-all">Reply</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Unread Notification 2: System/Action required -->
+            <div class="p-4 border-b border-gray-50 bg-indigo-50/30 hover:bg-gray-50 transition-colors relative cursor-pointer group">
+                <div class="absolute left-2 top-1/2 transform -translate-y-1/2 w-2 h-2 bg-indigo-600 rounded-full"></div>
+                
+                <div class="flex gap-4 ml-2">
+                    <div class="shrink-0 mt-1">
+                        <div class="w-10 h-10 rounded-full bg-amber-100 border border-amber-200 flex items-center justify-center text-amber-600">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <p class="text-sm text-gray-800 leading-snug">
+                            <span class="font-bold text-gray-900">Security Alert</span>: New login detected from an unrecognized device (MacBook Pro, San Jose).
+                        </p>
+                        <div class="flex items-center gap-2 mt-3">
+                            <button class="text-xs font-medium bg-amber-500 text-white px-3 py-1.5 rounded-lg shadow-sm hover:bg-amber-600 transition-colors">Review Activity</button>
+                            <button class="text-xs font-medium text-gray-500 hover:text-gray-800 px-3 py-1.5 rounded-lg transition-colors">It was me</button>
+                        </div>
+                        <p class="text-xs text-indigo-600 font-medium mt-2">1 hour ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Unread Notification 3: Success -->
+            <div class="p-4 border-b border-gray-50 bg-indigo-50/30 hover:bg-gray-50 transition-colors relative cursor-pointer group">
+                <div class="absolute left-2 top-1/2 transform -translate-y-1/2 w-2 h-2 bg-indigo-600 rounded-full"></div>
+                
+                <div class="flex gap-4 ml-2">
+                    <div class="shrink-0 mt-1">
+                        <div class="w-10 h-10 rounded-full bg-emerald-100 border border-emerald-200 flex items-center justify-center text-emerald-600">
+                            <i class="fa-solid fa-cloud-arrow-up"></i>
+                        </div>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <p class="text-sm text-gray-800 leading-snug">
+                            Your deployment for <span class="font-bold text-gray-900">v2.4.1</span> was successful.
+                        </p>
+                        <p class="text-xs text-indigo-600 font-medium mt-1">2 hours ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Read Notification 4: File Share -->
+            <div class="p-4 border-b border-gray-50 hover:bg-gray-50 transition-colors relative cursor-pointer group">
+                <div class="flex gap-4 ml-2">
+                    <div class="relative shrink-0 mt-1">
+                        <img src="https://i.pravatar.cc/150?img=47" class="w-10 h-10 rounded-full object-cover border border-gray-200" alt="Avatar">
+                        <div class="absolute -bottom-1 -right-1 w-5 h-5 bg-green-500 rounded-full border-2 border-white flex items-center justify-center text-white text-[10px]">
+                            <i class="fa-solid fa-file-lines"></i>
+                        </div>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <p class="text-sm text-gray-800 leading-snug">
+                            <span class="font-bold text-gray-900">Sarah Jenkins</span> shared a file with you.
+                        </p>
+                        <div class="mt-2 bg-white border border-gray-200 rounded-lg p-2 flex items-center gap-3 shadow-sm group-hover:border-indigo-300 transition-colors">
+                            <i class="fa-solid fa-file-excel text-green-600 text-xl"></i>
+                            <div class="min-w-0 flex-1">
+                                <p class="text-sm font-medium text-gray-900 truncate">Q3_Financial_Report.xlsx</p>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-400 font-medium mt-2">Yesterday at 4:30 PM</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Read Notification 5: General Update -->
+            <div class="p-4 border-b border-gray-50 hover:bg-gray-50 transition-colors relative cursor-pointer group">
+                <div class="flex gap-4 ml-2">
+                    <div class="shrink-0 mt-1">
+                        <div class="w-10 h-10 rounded-full bg-purple-100 border border-purple-200 flex items-center justify-center text-purple-600">
+                            <i class="fa-solid fa-gift"></i>
+                        </div>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <p class="text-sm text-gray-800 leading-snug">
+                            <span class="font-bold text-gray-900">New Feature!</span> Dark mode is now available. Try it out in your settings.
+                        </p>
+                        <p class="text-xs text-gray-400 font-medium mt-1">Oct 24, 2023</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <div class="p-3 border-t border-gray-100 bg-gray-50 text-center shrink-0">
+            <button class="text-sm font-medium text-indigo-600 hover:text-indigo-800 transition-colors w-full py-1">View all notifications</button>
+        </div>
+    </div>
+
+    <style>
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .custom-scrollbar::-webkit-scrollbar { width: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background-color: #cbd5e1; border-radius: 20px; }
+    </style>
+</body>
+</html>

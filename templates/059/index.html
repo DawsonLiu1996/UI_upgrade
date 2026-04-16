@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-100 font-sans text-gray-900 h-screen flex overflow-hidden">
+    
+    <!-- Sidebar -->
+    <aside class="w-64 bg-white border-r border-gray-200 hidden md:flex flex-col">
+        <div class="h-16 flex items-center px-6 border-b border-gray-200">
+            <div class="flex items-center gap-2 text-indigo-600 font-bold text-xl">
+                <i class="fa-solid fa-chart-pie"></i>
+                <span>Metrix</span>
+            </div>
+        </div>
+        
+        <div class="flex-1 overflow-y-auto py-4 px-3 space-y-1">
+            <div class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2 px-3 mt-4">Main</div>
+            <a href="#" class="flex items-center gap-3 px-3 py-2 bg-indigo-50 text-indigo-700 rounded-lg font-medium transition-colors">
+                <i class="fa-solid fa-house w-5 text-center"></i> Overview
+            </a>
+            <a href="#" class="flex items-center gap-3 px-3 py-2 text-gray-600 hover:bg-gray-50 hover:text-gray-900 rounded-lg font-medium transition-colors">
+                <i class="fa-solid fa-chart-line w-5 text-center"></i> Analytics
+            </a>
+            <a href="#" class="flex items-center gap-3 px-3 py-2 text-gray-600 hover:bg-gray-50 hover:text-gray-900 rounded-lg font-medium transition-colors justify-between">
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-users w-5 text-center"></i> Audience
+                </div>
+                <span class="bg-indigo-100 text-indigo-600 text-xs font-bold px-2 py-0.5 rounded-full">New</span>
+            </a>
+            <a href="#" class="flex items-center gap-3 px-3 py-2 text-gray-600 hover:bg-gray-50 hover:text-gray-900 rounded-lg font-medium transition-colors">
+                <i class="fa-solid fa-bullhorn w-5 text-center"></i> Campaigns
+            </a>
+            
+            <div class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2 px-3 mt-8">Management</div>
+            <a href="#" class="flex items-center gap-3 px-3 py-2 text-gray-600 hover:bg-gray-50 hover:text-gray-900 rounded-lg font-medium transition-colors">
+                <i class="fa-solid fa-wallet w-5 text-center"></i> Transactions
+            </a>
+            <a href="#" class="flex items-center gap-3 px-3 py-2 text-gray-600 hover:bg-gray-50 hover:text-gray-900 rounded-lg font-medium transition-colors">
+                <i class="fa-solid fa-file-invoice w-5 text-center"></i> Reports
+            </a>
+            <a href="#" class="flex items-center gap-3 px-3 py-2 text-gray-600 hover:bg-gray-50 hover:text-gray-900 rounded-lg font-medium transition-colors">
+                <i class="fa-solid fa-gear w-5 text-center"></i> Settings
+            </a>
+        </div>
+        
+        <div class="p-4 border-t border-gray-200">
+            <div class="flex items-center gap-3 cursor-pointer hover:bg-gray-50 p-2 rounded-lg transition-colors">
+                <img src="https://i.pravatar.cc/150?img=11" alt="Admin" class="w-9 h-9 rounded-full border border-gray-200">
+                <div class="flex-1 min-w-0">
+                    <p class="text-sm font-medium text-gray-900 truncate">Jane Cooper</p>
+                    <p class="text-xs text-gray-500 truncate">jane@example.com</p>
+                </div>
+                <i class="fa-solid fa-chevron-up text-xs text-gray-400"></i>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 flex flex-col h-screen overflow-hidden">
+        
+        <!-- Header -->
+        <header class="h-16 bg-white border-b border-gray-200 flex items-center justify-between px-4 sm:px-6 lg:px-8 flex-shrink-0 z-10 shadow-sm">
+            <div class="flex items-center gap-4">
+                <button class="md:hidden text-gray-500 hover:text-gray-900"><i class="fa-solid fa-bars text-xl"></i></button>
+                <h1 class="text-xl font-bold text-gray-900 hidden sm:block">Overview</h1>
+            </div>
+            
+            <div class="flex items-center gap-4">
+                <div class="relative hidden sm:block">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-sm"></i>
+                    <input type="text" placeholder="Search..." class="pl-9 pr-4 py-2 bg-gray-100 border-transparent rounded-lg text-sm focus:bg-white focus:ring-2 focus:ring-indigo-500 focus:border-transparent w-64 transition-all outline-none">
+                </div>
+                <button class="text-gray-400 hover:text-gray-600 relative p-2 rounded-full hover:bg-gray-100 transition-colors">
+                    <i class="fa-regular fa-bell text-xl"></i>
+                    <span class="absolute top-1 right-1 w-2.5 h-2.5 bg-red-500 rounded-full border-2 border-white"></span>
+                </button>
+                <button class="flex items-center gap-2 bg-indigo-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-indigo-700 transition-colors shadow-sm">
+                    <i class="fa-solid fa-download"></i> <span class="hidden sm:inline">Export</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Dashboard Content -->
+        <div class="flex-1 overflow-y-auto p-4 sm:p-6 lg:p-8">
+            
+            <!-- Date Filter -->
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+                <div>
+                    <h2 class="text-lg font-bold text-gray-900">Performance Summary</h2>
+                    <p class="text-sm text-gray-500">Track your key metrics across the platform.</p>
+                </div>
+                <div class="flex items-center bg-white rounded-lg shadow-sm border border-gray-200 p-1">
+                    <button class="px-3 py-1.5 text-sm font-medium text-gray-600 hover:text-gray-900 rounded-md">7D</button>
+                    <button class="px-3 py-1.5 text-sm font-medium bg-indigo-50 text-indigo-700 rounded-md">30D</button>
+                    <button class="px-3 py-1.5 text-sm font-medium text-gray-600 hover:text-gray-900 rounded-md">3M</button>
+                    <button class="px-3 py-1.5 text-sm font-medium text-gray-600 hover:text-gray-900 rounded-md">1Y</button>
+                </div>
+            </div>
+
+            <!-- Stats Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                
+                <!-- Stat Card 1 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-5 hover:shadow-md transition-shadow">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <p class="text-sm font-medium text-gray-500 uppercase tracking-wide">Total Revenue</p>
+                            <h3 class="text-2xl font-bold text-gray-900 mt-1">$45,231.89</h3>
+                        </div>
+                        <div class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                        </div>
+                    </div>
+                    <div class="flex items-center text-sm">
+                        <span class="text-emerald-600 font-medium flex items-center gap-1 bg-emerald-50 px-2 py-0.5 rounded-md">
+                            <i class="fa-solid fa-arrow-trend-up text-xs"></i> 20.1%
+                        </span>
+                        <span class="text-gray-400 ml-2">vs last month</span>
+                    </div>
+                </div>
+
+                <!-- Stat Card 2 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-5 hover:shadow-md transition-shadow">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <p class="text-sm font-medium text-gray-500 uppercase tracking-wide">Active Users</p>
+                            <h3 class="text-2xl font-bold text-gray-900 mt-1">12,493</h3>
+                        </div>
+                        <div class="w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                    </div>
+                    <div class="flex items-center text-sm">
+                        <span class="text-emerald-600 font-medium flex items-center gap-1 bg-emerald-50 px-2 py-0.5 rounded-md">
+                            <i class="fa-solid fa-arrow-trend-up text-xs"></i> 15.4%
+                        </span>
+                        <span class="text-gray-400 ml-2">vs last month</span>
+                    </div>
+                </div>
+
+                <!-- Stat Card 3 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-5 hover:shadow-md transition-shadow">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <p class="text-sm font-medium text-gray-500 uppercase tracking-wide">Avg. Session</p>
+                            <h3 class="text-2xl font-bold text-gray-900 mt-1">4m 32s</h3>
+                        </div>
+                        <div class="w-10 h-10 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center text-lg">
+                            <i class="fa-regular fa-clock"></i>
+                        </div>
+                    </div>
+                    <div class="flex items-center text-sm">
+                        <span class="text-red-500 font-medium flex items-center gap-1 bg-red-50 px-2 py-0.5 rounded-md">
+                            <i class="fa-solid fa-arrow-trend-down text-xs"></i> 2.1%
+                        </span>
+                        <span class="text-gray-400 ml-2">vs last month</span>
+                    </div>
+                </div>
+
+                <!-- Stat Card 4 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-5 hover:shadow-md transition-shadow">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <p class="text-sm font-medium text-gray-500 uppercase tracking-wide">Bounce Rate</p>
+                            <h3 class="text-2xl font-bold text-gray-900 mt-1">24.5%</h3>
+                        </div>
+                        <div class="w-10 h-10 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-person-walking-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="flex items-center text-sm">
+                        <span class="text-emerald-600 font-medium flex items-center gap-1 bg-emerald-50 px-2 py-0.5 rounded-md">
+                            <i class="fa-solid fa-arrow-trend-down text-xs"></i> 4.3%
+                        </span>
+                        <span class="text-gray-400 ml-2">vs last month</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charts Section -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+                
+                <!-- Main Chart (Revenue Overview) -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 lg:col-span-2">
+                    <div class="flex justify-between items-center mb-6">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-900">Revenue Overview</h3>
+                            <p class="text-sm text-gray-500">Daily revenue for the last 30 days.</p>
+                        </div>
+                        <button class="text-gray-400 hover:text-gray-600"><i class="fa-solid fa-ellipsis"></i></button>
+                    </div>
+                    
+                    <!-- Chart Placeholder (SVG) -->
+                    <div class="h-72 w-full relative">
+                        <!-- Y-axis labels -->
+                        <div class="absolute left-0 top-0 bottom-6 flex flex-col justify-between text-xs text-gray-400">
+                            <span>$4k</span>
+                            <span>$3k</span>
+                            <span>$2k</span>
+                            <span>$1k</span>
+                            <span>$0</span>
+                        </div>
+                        
+                        <!-- Grid lines -->
+                        <div class="absolute left-8 right-0 top-2 bottom-6 flex flex-col justify-between">
+                            <div class="w-full border-t border-gray-100 border-dashed"></div>
+                            <div class="w-full border-t border-gray-100 border-dashed"></div>
+                            <div class="w-full border-t border-gray-100 border-dashed"></div>
+                            <div class="w-full border-t border-gray-100 border-dashed"></div>
+                            <div class="w-full border-t border-gray-200"></div>
+                        </div>
+
+                        <!-- Bar Chart elements -->
+                        <div class="absolute left-10 right-2 top-2 bottom-6 flex items-end justify-between gap-1 sm:gap-2 px-2">
+                            <div class="w-full bg-indigo-100 hover:bg-indigo-600 transition-colors rounded-t-sm h-[20%] group relative"><div class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 pointer-events-none">$800</div></div>
+                            <div class="w-full bg-indigo-100 hover:bg-indigo-600 transition-colors rounded-t-sm h-[35%] group relative"><div class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 pointer-events-none">$1.4k</div></div>
+                            <div class="w-full bg-indigo-100 hover:bg-indigo-600 transition-colors rounded-t-sm h-[25%] group relative"><div class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 pointer-events-none">$1k</div></div>
+                            <div class="w-full bg-indigo-100 hover:bg-indigo-600 transition-colors rounded-t-sm h-[50%] group relative"><div class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 pointer-events-none">$2k</div></div>
+                            <div class="w-full bg-indigo-100 hover:bg-indigo-600 transition-colors rounded-t-sm h-[40%] group relative"><div class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 pointer-events-none">$1.6k</div></div>
+                            <div class="w-full bg-indigo-600 transition-colors rounded-t-sm h-[75%] group relative"><div class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 pointer-events-none">$3k</div></div>
+                            <div class="w-full bg-indigo-100 hover:bg-indigo-600 transition-colors rounded-t-sm h-[60%] group relative"><div class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 pointer-events-none">$2.4k</div></div>
+                            <div class="w-full bg-indigo-100 hover:bg-indigo-600 transition-colors rounded-t-sm h-[80%] group relative"><div class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 pointer-events-none">$3.2k</div></div>
+                            <div class="w-full bg-indigo-100 hover:bg-indigo-600 transition-colors rounded-t-sm h-[45%] group relative"><div class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 pointer-events-none">$1.8k</div></div>
+                            <div class="w-full bg-indigo-100 hover:bg-indigo-600 transition-colors rounded-t-sm h-[55%] group relative"><div class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 pointer-events-none">$2.2k</div></div>
+                            <div class="w-full bg-indigo-100 hover:bg-indigo-600 transition-colors rounded-t-sm h-[90%] group relative"><div class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 pointer-events-none">$3.6k</div></div>
+                            <div class="w-full bg-indigo-100 hover:bg-indigo-600 transition-colors rounded-t-sm h-[65%] group relative"><div class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 pointer-events-none">$2.6k</div></div>
+                        </div>
+
+                        <!-- X-axis labels -->
+                        <div class="absolute left-10 right-2 bottom-0 flex justify-between text-[10px] sm:text-xs text-gray-400">
+                            <span>Oct 1</span>
+                            <span>Oct 5</span>
+                            <span>Oct 10</span>
+                            <span>Oct 15</span>
+                            <span>Oct 20</span>
+                            <span>Oct 25</span>
+                            <span>Oct 30</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Donut Chart (Device Traffic) -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-6">
+                    <div class="flex justify-between items-center mb-6">
+                        <h3 class="text-lg font-bold text-gray-900">Traffic by Device</h3>
+                        <button class="text-gray-400 hover:text-gray-600"><i class="fa-solid fa-ellipsis"></i></button>
+                    </div>
+                    
+                    <div class="flex justify-center items-center h-48 relative">
+                        <!-- Simulated Donut Chart using CSS -->
+                        <div class="w-40 h-40 rounded-full border-[16px] border-gray-100 relative" style="background: conic-gradient(#4f46e5 0% 55%, #06b6d4 55% 85%, #f59e0b 85% 100%);">
+                            <div class="absolute inset-0 m-auto w-24 h-24 bg-white rounded-full flex flex-col items-center justify-center">
+                                <span class="text-2xl font-bold text-gray-900">100%</span>
+                                <span class="text-xs text-gray-500 uppercase">Total</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 space-y-3">
+                        <div class="flex items-center justify-between text-sm">
+                            <div class="flex items-center gap-2">
+                                <span class="w-3 h-3 rounded-full bg-indigo-600"></span>
+                                <span class="text-gray-600">Mobile</span>
+                            </div>
+                            <span class="font-bold text-gray-900">55%</span>
+                        </div>
+                        <div class="flex items-center justify-between text-sm">
+                            <div class="flex items-center gap-2">
+                                <span class="w-3 h-3 rounded-full bg-cyan-500"></span>
+                                <span class="text-gray-600">Desktop</span>
+                            </div>
+                            <span class="font-bold text-gray-900">30%</span>
+                        </div>
+                        <div class="flex items-center justify-between text-sm">
+                            <div class="flex items-center gap-2">
+                                <span class="w-3 h-3 rounded-full bg-amber-500"></span>
+                                <span class="text-gray-600">Tablet</span>
+                            </div>
+                            <span class="font-bold text-gray-900">15%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Transactions Table -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mb-8">
+                <div class="px-6 py-5 border-b border-gray-200 flex justify-between items-center">
+                    <h3 class="text-lg font-bold text-gray-900">Recent Transactions</h3>
+                    <a href="#" class="text-sm font-medium text-indigo-600 hover:text-indigo-800">View All</a>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-gray-50 text-xs text-gray-500 uppercase tracking-wider border-b border-gray-200">
+                                <th class="px-6 py-4 font-medium">Transaction ID</th>
+                                <th class="px-6 py-4 font-medium">Customer</th>
+                                <th class="px-6 py-4 font-medium">Date</th>
+                                <th class="px-6 py-4 font-medium">Amount</th>
+                                <th class="px-6 py-4 font-medium">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200 text-sm">
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="px-6 py-4 font-medium text-gray-900">#TRX-8472</td>
+                                <td class="px-6 py-4">
+                                    <div class="flex items-center gap-3">
+                                        <img src="https://i.pravatar.cc/150?img=32" alt="" class="w-8 h-8 rounded-full">
+                                        <div>
+                                            <p class="font-medium text-gray-900">Courtney Henry</p>
+                                            <p class="text-xs text-gray-500">courtney@example.com</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4 text-gray-500">Oct 24, 2023</td>
+                                <td class="px-6 py-4 font-bold text-gray-900">$1,299.00</td>
+                                <td class="px-6 py-4">
+                                    <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-emerald-100 text-emerald-800 border border-emerald-200">
+                                        Completed
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="px-6 py-4 font-medium text-gray-900">#TRX-8471</td>
+                                <td class="px-6 py-4">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-8 h-8 rounded-full bg-indigo-100 text-indigo-700 flex items-center justify-center font-bold text-xs">
+                                            TR
+                                        </div>
+                                        <div>
+                                            <p class="font-medium text-gray-900">Tom Richards</p>
+                                            <p class="text-xs text-gray-500">tom@example.com</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4 text-gray-500">Oct 24, 2023</td>
+                                <td class="px-6 py-4 font-bold text-gray-900">$85.50</td>
+                                <td class="px-6 py-4">
+                                    <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-amber-100 text-amber-800 border border-amber-200">
+                                        Pending
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="px-6 py-4 font-medium text-gray-900">#TRX-8470</td>
+                                <td class="px-6 py-4">
+                                    <div class="flex items-center gap-3">
+                                        <img src="https://i.pravatar.cc/150?img=47" alt="" class="w-8 h-8 rounded-full">
+                                        <div>
+                                            <p class="font-medium text-gray-900">Esther Howard</p>
+                                            <p class="text-xs text-gray-500">esther@example.com</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4 text-gray-500">Oct 23, 2023</td>
+                                <td class="px-6 py-4 font-bold text-gray-900">$450.00</td>
+                                <td class="px-6 py-4">
+                                    <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-red-100 text-red-800 border border-red-200">
+                                        Failed
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Hero Section -->
+    <div class="relative bg-teal-800 text-white overflow-hidden h-96">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80" alt="Tech Conference" class="w-full h-full object-cover opacity-30 mix-blend-overlay">
+            <div class="absolute inset-0 bg-gradient-to-r from-teal-900 to-transparent"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center">
+            <div class="inline-block bg-teal-600/50 backdrop-blur-sm border border-teal-500 rounded-full px-4 py-1.5 text-sm font-semibold tracking-wide uppercase mb-6 w-max">
+                Oct 15-17, 2024 • San Francisco
+            </div>
+            <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight mb-4">
+                TechSummit 2024
+            </h1>
+            <p class="text-xl md:text-2xl text-teal-100 max-w-2xl font-light">
+                Join industry leaders for three days of innovation, networking, and deep-dive technical sessions.
+            </p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 -mt-24 relative z-20 pb-20">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            
+            <!-- Details Column -->
+            <div class="lg:col-span-2 space-y-8">
+                <!-- Info Cards -->
+                <div class="bg-white rounded-2xl shadow-xl p-8 border border-gray-100 flex flex-col md:flex-row gap-8 justify-between">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-teal-50 p-3 rounded-lg text-teal-600">
+                            <i class="fas fa-calendar-alt text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900">Date & Time</h3>
+                            <p class="text-gray-500 text-sm mt-1">Oct 15, 9:00 AM PST -<br>Oct 17, 5:00 PM PST</p>
+                        </div>
+                    </div>
+                    
+                    <div class="hidden md:block w-px bg-gray-200"></div>
+                    
+                    <div class="flex items-start gap-4">
+                        <div class="bg-teal-50 p-3 rounded-lg text-teal-600">
+                            <i class="fas fa-map-marker-alt text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900">Location</h3>
+                            <p class="text-gray-500 text-sm mt-1">Moscone Center<br>San Francisco, CA</p>
+                        </div>
+                    </div>
+                    
+                    <div class="hidden md:block w-px bg-gray-200"></div>
+                    
+                    <div class="flex items-start gap-4">
+                        <div class="bg-teal-50 p-3 rounded-lg text-teal-600">
+                            <i class="fas fa-ticket-alt text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900">Tickets</h3>
+                            <p class="text-gray-500 text-sm mt-1">Starting at $299<br>Early bird available</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About -->
+                <div class="bg-white rounded-2xl shadow-sm p-8 border border-gray-100">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">About the Event</h2>
+                    <div class="prose prose-teal text-gray-600">
+                        <p>TechSummit 2024 is the premier gathering for developers, architects, and engineering leaders. We're bringing together the brightest minds to discuss the future of software development.</p>
+                        <p class="mt-4">Expect keynote presentations from tech giants, hands-on workshops covering the latest frameworks, and networking opportunities with peers from around the globe.</p>
+                        <ul class="mt-4 space-y-2 list-disc list-inside">
+                            <li>50+ Expert Speakers</li>
+                            <li>4 Dedicated Tracks (Web, Mobile, AI, Cloud)</li>
+                            <li>Exclusive After-Party</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Registration Column (Sticky) -->
+            <div class="lg:col-span-1">
+                <div class="sticky top-8 bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100">
+                    <div class="bg-gray-50 p-6 border-b border-gray-100">
+                        <h2 class="text-xl font-bold text-gray-900">Register Now</h2>
+                        <p class="text-sm text-gray-500 mt-1">Secure your spot before prices increase.</p>
+                    </div>
+                    
+                    <div class="p-6">
+                        <form class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Ticket Type</label>
+                                <select class="w-full rounded-lg border-gray-300 border px-4 py-2.5 focus:border-teal-500 focus:ring-teal-500 text-gray-700 bg-white">
+                                    <option>Early Bird - $299</option>
+                                    <option>Standard - $499</option>
+                                    <option>VIP Pass - $899</option>
+                                </select>
+                            </div>
+                            
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">First Name</label>
+                                    <input type="text" class="w-full rounded-lg border-gray-300 border px-4 py-2.5 focus:border-teal-500 focus:ring-teal-500">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Last Name</label>
+                                    <input type="text" class="w-full rounded-lg border-gray-300 border px-4 py-2.5 focus:border-teal-500 focus:ring-teal-500">
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                                <input type="email" class="w-full rounded-lg border-gray-300 border px-4 py-2.5 focus:border-teal-500 focus:ring-teal-500">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Company (Optional)</label>
+                                <input type="text" class="w-full rounded-lg border-gray-300 border px-4 py-2.5 focus:border-teal-500 focus:ring-teal-500">
+                            </div>
+
+                            <div class="pt-4 mt-4 border-t border-gray-100">
+                                <div class="flex justify-between items-center mb-6">
+                                    <span class="text-gray-600 font-medium">Total</span>
+                                    <span class="text-2xl font-bold text-gray-900">$299</span>
+                                </div>
+                                <button type="button" class="w-full bg-teal-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-teal-700 transition-colors shadow-lg shadow-teal-600/30 flex justify-center items-center gap-2">
+                                    Continue to Payment <i class="fas fa-arrow-right"></i>
+                                </button>
+                                <p class="text-xs text-center text-gray-500 mt-4">By registering, you agree to our Terms of Service and Privacy Policy.</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "id": "058",
+  "name": "E-commerce Product Page",
+  "type": "E-commerce",
+  "source": {
+    "url": "https://tailwindcss.com",
+    "title": "Custom Generated"
+  },
+  "tags": {
+    "style": [
+      "现代",
+      "极简",
+      "响应式"
+    ],
+    "color": [
+      "中性色",
+      "蓝紫渐变"
+    ],
+    "features": [
+      "product",
+      "store",
+      "shop"
+    ]
+  }
+}
