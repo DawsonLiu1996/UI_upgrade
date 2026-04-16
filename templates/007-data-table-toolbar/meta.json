@@ -1,14 +1,29 @@
 {
   "id": "007-data-table-toolbar",
   "name": "Data Table with Toolbar",
-  "type": "Table",
+  "kind": "component",
+  "domain": [
+    "data-display"
+  ],
+  "tags": {
+    "aesthetic": [
+      "modern"
+    ],
+    "theme": "light",
+    "palette": [
+      "白底",
+      "蓝紫系"
+    ],
+    "patterns": [],
+    "capabilities": [
+      "responsive"
+    ],
+    "tokens": [
+      "tailwind"
+    ]
+  },
   "source": {
     "url": "https://ant.design/components/table",
     "title": "Ant Design Table"
-  },
-  "tags": {
-    "style": ["企业风", "产品化"],
-    "color": ["白底", "蓝紫系"],
-    "features": ["表头工具栏", "密度适中", "行 hover"]
   }
 }

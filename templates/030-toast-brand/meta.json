@@ -1,15 +1,28 @@
 {
   "id": "030-toast-brand",
   "name": "Brand Toast (Purple)",
-  "type": "Toast/Notification",
+  "kind": "component",
+  "domain": [
+    "feedback"
+  ],
+  "tags": {
+    "aesthetic": [
+      "modern"
+    ],
+    "theme": "dark",
+    "palette": [
+      "紫色系"
+    ],
+    "patterns": [],
+    "capabilities": [
+      "responsive"
+    ],
+    "tokens": [
+      "tailwind"
+    ]
+  },
   "source": {
     "url": "https://nextui.org/docs/components/modal",
     "title": "NextUI (style reference)"
-  },
-  "tags": {
-    "style": ["现代", "品牌强", "产品化"],
-    "color": ["紫色系", "深色系"],
-    "features": ["强主色", "堆叠", "按钮层级"]
   }
 }
-

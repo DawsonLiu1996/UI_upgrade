@@ -1,25 +1,29 @@
 {
   "id": "071-shopping-cart",
   "name": "Shopping Cart List",
-  "type": "Component",
-  "source": {
-    "url": "https://tailwindcss.com",
-    "title": "Custom Generated"
-  },
+  "kind": "component",
+  "domain": [
+    "data-display"
+  ],
   "tags": {
-    "style": [
-      "现代",
-      "极简",
-      "响应式"
+    "aesthetic": [
+      "minimal"
     ],
-    "color": [
+    "theme": "light",
+    "palette": [
       "中性色",
       "蓝紫渐变"
     ],
-    "features": [
-      "ecommerce",
-      "cart",
-      "checkout"
+    "patterns": [],
+    "capabilities": [
+      "responsive"
+    ],
+    "tokens": [
+      "tailwind"
     ]
+  },
+  "source": {
+    "url": "https://tailwindcss.com",
+    "title": "Custom Generated"
   }
 }

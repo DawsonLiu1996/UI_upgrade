@@ -1,25 +1,29 @@
 {
   "id": "081",
   "name": "Event Registration",
-  "type": "Component",
-  "source": {
-    "url": "https://tailwindcss.com",
-    "title": "Custom Generated"
-  },
+  "kind": "component",
+  "domain": [
+    "data-display"
+  ],
   "tags": {
-    "style": [
-      "现代",
-      "极简",
-      "响应式"
+    "aesthetic": [
+      "minimal"
     ],
-    "color": [
+    "theme": "light",
+    "palette": [
       "中性色",
       "蓝紫渐变"
     ],
-    "features": [
-      "event",
-      "registration",
-      "landing"
+    "patterns": [],
+    "capabilities": [
+      "responsive"
+    ],
+    "tokens": [
+      "tailwind"
     ]
+  },
+  "source": {
+    "url": "https://tailwindcss.com",
+    "title": "Custom Generated"
   }
 }

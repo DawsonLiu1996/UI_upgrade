@@ -1,25 +1,29 @@
 {
   "id": "098-settings-navigation",
   "name": "Settings Navigation",
-  "type": "Navigation",
-  "source": {
-    "url": "https://tailwindcss.com",
-    "title": "Custom Generated"
-  },
+  "kind": "component",
+  "domain": [
+    "navigation"
+  ],
   "tags": {
-    "style": [
-      "现代",
-      "极简",
-      "响应式"
+    "aesthetic": [
+      "minimal"
     ],
-    "color": [
+    "theme": "light",
+    "palette": [
       "中性色",
       "蓝紫渐变"
     ],
-    "features": [
-      "settings",
-      "menu",
-      "sidebar"
+    "patterns": [],
+    "capabilities": [
+      "responsive"
+    ],
+    "tokens": [
+      "tailwind"
     ]
+  },
+  "source": {
+    "url": "https://tailwindcss.com",
+    "title": "Custom Generated"
   }
 }

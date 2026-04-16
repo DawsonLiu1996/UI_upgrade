@@ -1,15 +1,29 @@
 {
   "id": "020-ecommerce-product-card",
   "name": "Ecommerce Product Card",
-  "type": "Ecommerce/Card",
+  "kind": "component",
+  "domain": [
+    "commerce"
+  ],
+  "tags": {
+    "aesthetic": [
+      "modern"
+    ],
+    "theme": "light",
+    "palette": [
+      "绿色系",
+      "暖色点缀"
+    ],
+    "patterns": [],
+    "capabilities": [
+      "responsive"
+    ],
+    "tokens": [
+      "tailwind"
+    ]
+  },
   "source": {
     "url": "https://polaris.shopify.com",
     "title": "Shopify Polaris"
-  },
-  "tags": {
-    "style": ["电商风", "产品化", "现代"],
-    "color": ["绿色系", "暖色点缀"],
-    "features": ["商品卡", "价格层级", "强CTA"]
   }
 }
-

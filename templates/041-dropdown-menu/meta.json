@@ -1,19 +1,23 @@
 {
   "id": "041-dropdown-menu",
   "name": "Dropdown Menu",
-  "type": "Component",
+  "kind": "component",
+  "domain": [
+    "data-display"
+  ],
   "tags": {
-    "style": [
-      "现代"
+    "aesthetic": [
+      "modern"
     ],
-    "color": [
+    "theme": "light",
+    "palette": [
       "通用色"
     ],
-    "features": [
-      "dropdown",
-      "menu",
-      "ui",
-      "navigation",
+    "patterns": [],
+    "capabilities": [
+      "responsive"
+    ],
+    "tokens": [
       "tailwind"
     ]
   }

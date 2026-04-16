@@ -1,24 +1,29 @@
 {
   "id": "036-marketing-hero",
   "name": "Marketing Hero",
-  "type": "Page/Sections",
+  "kind": "page",
+  "domain": [
+    "data-display"
+  ],
+  "tags": {
+    "aesthetic": [
+      "glassmorphism"
+    ],
+    "theme": "light",
+    "palette": [
+      "通用色"
+    ],
+    "patterns": [],
+    "capabilities": [
+      "responsive"
+    ],
+    "tokens": [
+      "tailwind"
+    ]
+  },
   "source": {
     "url": "#",
     "title": "Tailwind UI Blocks"
-  },
-  "tags": {
-    "style": [
-      "玻璃态",
-      "现代"
-    ],
-    "color": [
-      "通用色"
-    ],
-    "features": [
-      "营销页",
-      "大留白",
-      "网格渐变背景"
-    ]
   },
   "description": "现代营销落地页首屏，采用 Mesh Gradient 网格渐变背景和高质感的玻璃态卡片（Glassmorphism）。"
 }

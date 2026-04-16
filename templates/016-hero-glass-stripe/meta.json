@@ -1,15 +1,29 @@
 {
   "id": "016-hero-glass-stripe",
   "name": "Glass Hero (Stripe-like)",
-  "type": "Hero",
+  "kind": "section",
+  "domain": [
+    "data-display"
+  ],
+  "tags": {
+    "aesthetic": [
+      "glassmorphism"
+    ],
+    "theme": "light",
+    "palette": [
+      "紫色系",
+      "渐变"
+    ],
+    "patterns": [],
+    "capabilities": [
+      "responsive"
+    ],
+    "tokens": [
+      "tailwind"
+    ]
+  },
   "source": {
     "url": "https://stripe.com",
     "title": "Stripe"
-  },
-  "tags": {
-    "style": ["玻璃拟态", "现代", "科技感", "转化导向"],
-    "color": ["紫色系", "渐变"],
-    "features": ["光晕背景", "高对比CTA", "卡片玻璃层"]
   }
 }
-

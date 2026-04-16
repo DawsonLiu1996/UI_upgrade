@@ -1,15 +1,29 @@
 {
   "id": "022-modal-glass-sheet",
   "name": "Glass Modal Sheet",
-  "type": "Modal",
+  "kind": "component",
+  "domain": [
+    "feedback"
+  ],
+  "tags": {
+    "aesthetic": [
+      "glassmorphism",
+      "minimal"
+    ],
+    "theme": "dark",
+    "palette": [
+      "蓝紫渐变"
+    ],
+    "patterns": [],
+    "capabilities": [
+      "responsive"
+    ],
+    "tokens": [
+      "tailwind"
+    ]
+  },
   "source": {
     "url": "https://developer.apple.com/design/human-interface-guidelines/modality",
     "title": "Apple HIG - Modality"
-  },
-  "tags": {
-    "style": ["玻璃拟态", "精致", "极简"],
-    "color": ["深色系", "蓝紫渐变"],
-    "features": ["底部弹出", "圆角大", "背景虚化"]
   }
 }
-

@@ -1,18 +1,23 @@
 {
   "id": "047-pagination",
   "name": "Pagination",
-  "type": "Component",
+  "kind": "component",
+  "domain": [
+    "data-display"
+  ],
   "tags": {
-    "style": [
-      "现代"
+    "aesthetic": [
+      "modern"
     ],
-    "color": [
+    "theme": "light",
+    "palette": [
       "通用色"
     ],
-    "features": [
-      "pagination",
-      "navigation",
-      "ui",
+    "patterns": [],
+    "capabilities": [
+      "responsive"
+    ],
+    "tokens": [
       "tailwind"
     ]
   }

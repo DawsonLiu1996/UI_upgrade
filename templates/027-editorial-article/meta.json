@@ -1,15 +1,29 @@
 {
   "id": "027-editorial-article",
   "name": "Editorial Article (Magazine)",
-  "type": "Content/Editorial",
+  "kind": "component",
+  "domain": [
+    "data-display"
+  ],
+  "tags": {
+    "aesthetic": [
+      "minimal"
+    ],
+    "theme": "light",
+    "palette": [
+      "白底",
+      "黑白灰"
+    ],
+    "patterns": [],
+    "capabilities": [
+      "responsive"
+    ],
+    "tokens": [
+      "tailwind"
+    ]
+  },
   "source": {
     "url": "https://linear.app/updates",
     "title": "Linear Updates"
-  },
-  "tags": {
-    "style": ["编辑排版", "极简", "排版强"],
-    "color": ["白底", "黑白灰"],
-    "features": ["长文层级", "引文块", "目录侧栏"]
   }
 }
-

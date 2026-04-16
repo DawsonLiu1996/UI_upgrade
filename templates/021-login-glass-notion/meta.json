@@ -1,15 +1,30 @@
 {
   "id": "021-login-glass-notion",
   "name": "Login (Notion-like minimal)",
-  "type": "Form/Auth",
+  "kind": "component",
+  "domain": [
+    "forms"
+  ],
+  "tags": {
+    "aesthetic": [
+      "glassmorphism",
+      "minimal"
+    ],
+    "theme": "light",
+    "palette": [
+      "黑白灰",
+      "白底"
+    ],
+    "patterns": [],
+    "capabilities": [
+      "responsive"
+    ],
+    "tokens": [
+      "tailwind"
+    ]
+  },
   "source": {
     "url": "https://www.notion.so",
     "title": "Notion"
-  },
-  "tags": {
-    "style": ["极简", "产品化", "玻璃拟态"],
-    "color": ["黑白灰", "白底"],
-    "features": ["轻边框", "大留白", "输入聚焦态"]
   }
 }
-

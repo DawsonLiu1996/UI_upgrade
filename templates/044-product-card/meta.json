@@ -1,19 +1,23 @@
 {
   "id": "044-product-card",
   "name": "Product Card",
-  "type": "Component",
+  "kind": "component",
+  "domain": [
+    "data-display"
+  ],
   "tags": {
-    "style": [
-      "现代"
+    "aesthetic": [
+      "modern"
     ],
-    "color": [
+    "theme": "light",
+    "palette": [
       "通用色"
     ],
-    "features": [
-      "card",
-      "ecommerce",
-      "product",
-      "ui",
+    "patterns": [],
+    "capabilities": [
+      "responsive"
+    ],
+    "tokens": [
       "tailwind"
     ]
   }

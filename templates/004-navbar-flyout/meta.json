@@ -1,15 +1,29 @@
 {
   "id": "004-navbar-flyout",
   "name": "Top Nav with Flyout Menu",
-  "type": "Nav",
+  "kind": "component",
+  "domain": [
+    "navigation"
+  ],
+  "tags": {
+    "aesthetic": [
+      "minimal"
+    ],
+    "theme": "light",
+    "palette": [
+      "白底",
+      "黑白灰"
+    ],
+    "patterns": [],
+    "capabilities": [
+      "responsive"
+    ],
+    "tokens": [
+      "tailwind"
+    ]
+  },
   "source": {
     "url": "https://tailwindcss.com/plus/ui-blocks/marketing/elements/flyout-menus",
     "title": "Tailwind UI Blocks - Flyout Menus"
-  },
-  "tags": {
-    "style": ["产品化", "现代", "极简"],
-    "color": ["白底", "黑白灰"],
-    "features": ["大间距", "下拉面板", "微阴影"]
   }
 }
-

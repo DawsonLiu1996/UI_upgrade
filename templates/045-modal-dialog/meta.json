@@ -1,19 +1,23 @@
 {
   "id": "045-modal-dialog",
   "name": "Modal Dialog",
-  "type": "Component",
+  "kind": "component",
+  "domain": [
+    "data-display"
+  ],
   "tags": {
-    "style": [
-      "现代"
+    "aesthetic": [
+      "modern"
     ],
-    "color": [
+    "theme": "light",
+    "palette": [
       "通用色"
     ],
-    "features": [
-      "modal",
-      "dialog",
-      "popup",
-      "ui",
+    "patterns": [],
+    "capabilities": [
+      "responsive"
+    ],
+    "tokens": [
       "tailwind"
     ]
   }

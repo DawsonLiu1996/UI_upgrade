@@ -1,19 +1,23 @@
 {
   "id": "042-stats-section",
   "name": "Stats Section",
-  "type": "Component",
+  "kind": "component",
+  "domain": [
+    "data-display"
+  ],
   "tags": {
-    "style": [
-      "现代"
+    "aesthetic": [
+      "modern"
     ],
-    "color": [
+    "theme": "light",
+    "palette": [
       "通用色"
     ],
-    "features": [
-      "stats",
-      "dashboard",
-      "analytics",
-      "ui",
+    "patterns": [],
+    "capabilities": [
+      "responsive"
+    ],
+    "tokens": [
       "tailwind"
     ]
   }

@@ -1,15 +1,29 @@
 {
   "id": "006-dashboard-kpi-cards",
   "name": "Dashboard KPI Cards",
-  "type": "Dashboard/Stats",
+  "kind": "page",
+  "domain": [
+    "dashboard"
+  ],
+  "tags": {
+    "aesthetic": [
+      "modern"
+    ],
+    "theme": "light",
+    "palette": [
+      "白底",
+      "灰蓝系"
+    ],
+    "patterns": [],
+    "capabilities": [
+      "responsive"
+    ],
+    "tokens": [
+      "tailwind"
+    ]
+  },
   "source": {
     "url": "https://ui.shadcn.com/examples/dashboard",
     "title": "shadcn/ui Dashboard Example"
-  },
-  "tags": {
-    "style": ["产品化", "现代", "企业风"],
-    "color": ["白底", "灰蓝系"],
-    "features": ["卡片栅格", "低对比边框", "信息密度适中"]
   }
 }
-

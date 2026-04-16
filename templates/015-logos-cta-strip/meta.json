@@ -1,14 +1,29 @@
 {
   "id": "015-logos-cta-strip",
   "name": "Logo Cloud + CTA Strip",
-  "type": "CTA/Logos",
+  "kind": "component",
+  "domain": [
+    "data-display"
+  ],
+  "tags": {
+    "aesthetic": [
+      "minimal"
+    ],
+    "theme": "light",
+    "palette": [
+      "白底",
+      "绿色系"
+    ],
+    "patterns": [],
+    "capabilities": [
+      "responsive"
+    ],
+    "tokens": [
+      "tailwind"
+    ]
+  },
   "source": {
     "url": "https://tailwindcss.com/plus/ui-blocks/marketing/sections/logo-clouds",
     "title": "Tailwind UI Blocks - Logo Clouds"
-  },
-  "tags": {
-    "style": ["现代", "营销风", "极简"],
-    "color": ["白底", "绿色系"],
-    "features": ["Logo cloud", "高对比CTA", "大留白"]
   }
 }

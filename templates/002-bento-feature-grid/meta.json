@@ -1,14 +1,30 @@
 {
   "id": "002-bento-feature-grid",
   "name": "Bento Feature Grid",
-  "type": "Feature/Bento",
+  "kind": "component",
+  "domain": [
+    "data-display"
+  ],
+  "tags": {
+    "aesthetic": [
+      "glassmorphism",
+      "minimal"
+    ],
+    "theme": "light",
+    "palette": [
+      "白底",
+      "青粉渐变"
+    ],
+    "patterns": [],
+    "capabilities": [
+      "responsive"
+    ],
+    "tokens": [
+      "tailwind"
+    ]
+  },
   "source": {
     "url": "https://tailwindcss.com/plus/ui-blocks/marketing/sections/bento-grids",
     "title": "Tailwind UI Blocks - Bento Grids"
-  },
-  "tags": {
-    "style": ["现代", "极简"],
-    "color": ["白底", "青粉渐变"],
-    "features": ["大圆角", "柔和阴影", "卡片网格", "玻璃感"]
   }
 }

@@ -1,25 +1,29 @@
 {
   "id": "035-payment-checkout",
   "name": "Payment Checkout",
-  "type": "Form/Checkout",
+  "kind": "component",
+  "domain": [
+    "forms"
+  ],
+  "tags": {
+    "aesthetic": [
+      "modern"
+    ],
+    "theme": "light",
+    "palette": [
+      "通用色"
+    ],
+    "patterns": [],
+    "capabilities": [
+      "responsive"
+    ],
+    "tokens": [
+      "tailwind"
+    ]
+  },
   "source": {
     "url": "#",
     "title": "Stripe Payment Element"
-  },
-  "tags": {
-    "style": [
-      "现代"
-    ],
-    "color": [
-      "通用色"
-    ],
-    "features": [
-      "金融感",
-      "精致",
-      "表单",
-      "信任感",
-      "阴影层级"
-    ]
   },
   "description": "类似 Stripe 的支付结账表单。极具信任感的阴影处理，精细的边框与焦点状态，强调高转化率。"
 }

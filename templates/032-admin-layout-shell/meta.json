@@ -1,24 +1,29 @@
 {
   "id": "032-admin-layout-shell",
   "name": "Admin Layout Shell",
-  "type": "Layout",
+  "kind": "layout",
+  "domain": [
+    "data-display"
+  ],
+  "tags": {
+    "aesthetic": [
+      "modern"
+    ],
+    "theme": "light",
+    "palette": [
+      "蓝紫系"
+    ],
+    "patterns": [],
+    "capabilities": [
+      "responsive"
+    ],
+    "tokens": [
+      "tailwind"
+    ]
+  },
   "source": {
     "url": "#",
     "title": "Mantine AppShell"
-  },
-  "tags": {
-    "style": [
-      "现代"
-    ],
-    "color": [
-      "蓝紫系"
-    ],
-    "features": [
-      "后台壳",
-      "响应式",
-      "可组合",
-      "卡片面板"
-    ]
   },
   "description": "现代后台布局骨架，包含 Header、Sidebar 和 Content 区，信息密度适中。"
 }

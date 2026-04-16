@@ -1,15 +1,29 @@
 {
   "id": "028-form-glass-mui",
   "name": "Form Card (MUI-like density)",
-  "type": "Form",
+  "kind": "component",
+  "domain": [
+    "forms"
+  ],
+  "tags": {
+    "aesthetic": [
+      "glassmorphism"
+    ],
+    "theme": "light",
+    "palette": [
+      "蓝色系",
+      "白底"
+    ],
+    "patterns": [],
+    "capabilities": [
+      "responsive"
+    ],
+    "tokens": [
+      "tailwind"
+    ]
+  },
   "source": {
     "url": "https://mui.com/material-ui/react-text-field/",
     "title": "MUI Text Field"
-  },
-  "tags": {
-    "style": ["企业风", "产品化", "玻璃拟态"],
-    "color": ["蓝色系", "白底"],
-    "features": ["表单密度", "聚焦态", "帮助文本"]
   }
 }
-

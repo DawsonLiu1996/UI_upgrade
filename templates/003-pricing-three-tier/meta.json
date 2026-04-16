@@ -1,15 +1,29 @@
 {
   "id": "003-pricing-three-tier",
   "name": "Pricing (3 tiers)",
-  "type": "Pricing",
+  "kind": "component",
+  "domain": [
+    "commerce"
+  ],
+  "tags": {
+    "aesthetic": [
+      "minimal"
+    ],
+    "theme": "light",
+    "palette": [
+      "白底",
+      "黑白灰"
+    ],
+    "patterns": [],
+    "capabilities": [
+      "responsive"
+    ],
+    "tokens": [
+      "tailwind"
+    ]
+  },
   "source": {
     "url": "https://tailwindcss.com/plus/ui-blocks/marketing/sections/pricing",
     "title": "Tailwind UI Blocks - Pricing Sections"
-  },
-  "tags": {
-    "style": ["现代", "极简", "转化导向"],
-    "color": ["白底", "黑白灰"],
-    "features": ["对齐严格", "高对比CTA", "标签高亮"]
   }
 }
-

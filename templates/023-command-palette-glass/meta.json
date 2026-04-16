@@ -1,15 +1,28 @@
 {
   "id": "023-command-palette-glass",
   "name": "Command Palette (Glass)",
-  "type": "Command/Palette",
+  "kind": "component",
+  "domain": [
+    "data-display"
+  ],
+  "tags": {
+    "aesthetic": [
+      "glassmorphism"
+    ],
+    "theme": "dark",
+    "palette": [
+      "蓝紫渐变"
+    ],
+    "patterns": [],
+    "capabilities": [
+      "responsive"
+    ],
+    "tokens": [
+      "tailwind"
+    ]
+  },
   "source": {
     "url": "https://tailwindcss.com/plus/ui-blocks/application-ui/navigation/command-palettes",
     "title": "Tailwind UI Blocks - Command Palettes"
-  },
-  "tags": {
-    "style": ["玻璃拟态", "开发者风", "产品化"],
-    "color": ["深色系", "蓝紫渐变"],
-    "features": ["浮层", "快捷键提示", "分组列表"]
   }
 }
-

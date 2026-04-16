@@ -1,15 +1,29 @@
 {
   "id": "025-onboarding-steps",
   "name": "Onboarding Steps (Gradient)",
-  "type": "Steps/Onboarding",
+  "kind": "component",
+  "domain": [
+    "data-display"
+  ],
+  "tags": {
+    "aesthetic": [
+      "modern"
+    ],
+    "theme": "light",
+    "palette": [
+      "蓝紫渐变",
+      "白底"
+    ],
+    "patterns": [],
+    "capabilities": [
+      "responsive"
+    ],
+    "tokens": [
+      "tailwind"
+    ]
+  },
   "source": {
     "url": "https://mui.com/material-ui/react-stepper/",
     "title": "MUI Stepper"
-  },
-  "tags": {
-    "style": ["产品化", "现代", "科技感"],
-    "color": ["蓝紫渐变", "白底"],
-    "features": ["步骤条", "进度强调", "说明文案"]
   }
 }
-
