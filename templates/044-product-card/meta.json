@@ -1,0 +1,20 @@
+{
+  "id": "044-product-card",
+  "name": "Product Card",
+  "type": "Component",
+  "tags": {
+    "style": [
+      "现代"
+    ],
+    "color": [
+      "通用色"
+    ],
+    "features": [
+      "card",
+      "ecommerce",
+      "product",
+      "ui",
+      "tailwind"
+    ]
+  }
+}

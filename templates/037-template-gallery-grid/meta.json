@@ -1,0 +1,23 @@
+{
+  "id": "037-template-gallery-grid",
+  "name": "Template Gallery Grid",
+  "type": "Page/Gallery",
+  "source": {
+    "url": "#",
+    "title": "Notion Templates"
+  },
+  "tags": {
+    "style": [
+      "极简",
+      "卡片网格"
+    ],
+    "color": [
+      "黑白灰"
+    ],
+    "features": [
+      "内容密集",
+      "粗体排版"
+    ]
+  },
+  "description": "类似 Notion 模板库的极简黑白卡片网格。注重边框、留白和基础排版，去除多余装饰。"
+}

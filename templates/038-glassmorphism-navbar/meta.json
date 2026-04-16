@@ -1,0 +1,24 @@
+{
+  "id": "038-glassmorphism-navbar",
+  "name": "Glassmorphism Navbar",
+  "type": "Nav",
+  "source": {
+    "url": "#",
+    "title": "NextUI Navbar"
+  },
+  "tags": {
+    "style": [
+      "现代"
+    ],
+    "color": [
+      "通用色"
+    ],
+    "features": [
+      "圆角大",
+      "玻璃感",
+      "悬浮",
+      "轻盈"
+    ]
+  },
+  "description": "居中悬浮的现代顶部导航栏，采用高斯模糊（backdrop-filter）和药丸状（Pill-shaped）圆角设计。"
+}

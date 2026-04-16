@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Checkout - Stripe Style</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .stripe-shadow { box-shadow: 0 50px 100px -20px rgba(50,50,93,0.1), 0 30px 60px -30px rgba(0,0,0,0.15), inset 0 -2px 6px 0 rgba(10,37,64,0.05); }
+    .input-stripe { transition: box-shadow 0.15s ease, border 0.15s ease; }
+    .input-stripe:focus-within { box-shadow: 0 0 0 3px rgba(99,91,255,0.2); border-color: #635bff; }
+  </style>
+</head>
+<body class="bg-[#f6f9fc] font-sans min-h-screen flex items-center justify-center p-4">
+  <div class="w-full max-w-md bg-white rounded-xl stripe-shadow overflow-hidden">
+    <div class="p-8">
+      <!-- Header -->
+      <div class="flex items-center justify-between mb-8">
+        <div>
+          <h2 class="text-xl font-bold text-[#32325d] mb-1">Upgrade to Pro</h2>
+          <p class="text-sm text-[#525f7f]">Billed $24.00 per month</p>
+        </div>
+        <div class="w-12 h-12 bg-[#e3e8ee] rounded-full flex items-center justify-center">
+          <svg class="w-6 h-6 text-[#635bff]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+        </div>
+      </div>
+
+      <!-- Payment Form -->
+      <form class="space-y-5">
+        <div>
+          <label class="block text-sm font-medium text-[#32325d] mb-2">Email</label>
+          <input type="email" class="w-full px-4 py-3 bg-white border border-[#e3e8ee] rounded-md text-[#32325d] placeholder-[#8898aa] focus:outline-none input-stripe" placeholder="jane@example.com">
+        </div>
+        
+        <div>
+          <label class="block text-sm font-medium text-[#32325d] mb-2">Card Information</label>
+          <div class="border border-[#e3e8ee] rounded-md bg-white input-stripe overflow-hidden">
+            <div class="flex items-center px-4 py-3 border-b border-[#e3e8ee]">
+              <svg class="w-5 h-5 text-[#8898aa] mr-3" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>
+              <input type="text" class="w-full border-none focus:outline-none text-[#32325d] placeholder-[#8898aa] bg-transparent" placeholder="Card number">
+            </div>
+            <div class="flex">
+              <input type="text" class="w-1/2 px-4 py-3 border-r border-[#e3e8ee] focus:outline-none text-[#32325d] placeholder-[#8898aa] bg-transparent" placeholder="MM / YY">
+              <input type="text" class="w-1/2 px-4 py-3 focus:outline-none text-[#32325d] placeholder-[#8898aa] bg-transparent" placeholder="CVC">
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-[#32325d] mb-2">Name on card</label>
+          <input type="text" class="w-full px-4 py-3 bg-white border border-[#e3e8ee] rounded-md text-[#32325d] placeholder-[#8898aa] focus:outline-none input-stripe" placeholder="Jane Doe">
+        </div>
+
+        <button type="button" class="w-full mt-6 bg-[#635bff] hover:bg-[#0a2540] text-white font-semibold py-3.5 px-4 rounded-md shadow-[0_4px_6px_rgba(50,50,93,0.11),0_1px_3px_rgba(0,0,0,0.08)] transition-all duration-150 transform hover:-translate-y-px">
+          Subscribe
+        </button>
+      </form>
+    </div>
+    
+    <!-- Footer secure badge -->
+    <div class="bg-[#f7fafc] px-8 py-4 border-t border-[#e3e8ee] flex justify-center items-center text-xs text-[#525f7f] font-medium">
+      <svg class="w-4 h-4 mr-2 text-[#635bff]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+      Payments are secure and encrypted
+    </div>
+  </div>
+</body>
+</html>

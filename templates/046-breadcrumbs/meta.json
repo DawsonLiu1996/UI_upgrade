@@ -1,0 +1,19 @@
+{
+  "id": "046-breadcrumbs",
+  "name": "Breadcrumbs",
+  "type": "Component",
+  "tags": {
+    "style": [
+      "现代"
+    ],
+    "color": [
+      "通用色"
+    ],
+    "features": [
+      "breadcrumbs",
+      "navigation",
+      "ui",
+      "tailwind"
+    ]
+  }
+}

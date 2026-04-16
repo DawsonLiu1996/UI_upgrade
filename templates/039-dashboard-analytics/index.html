@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - shadcn/ui Style</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  </style>
+</head>
+<body class="bg-white text-slate-950 antialiased min-h-screen">
+  
+  <div class="border-b border-slate-200">
+    <div class="flex h-16 items-center px-8 max-w-7xl mx-auto">
+      <div class="flex items-center space-x-4">
+        <div class="w-8 h-8 bg-slate-950 rounded flex items-center justify-center text-white text-xs font-bold">shad</div>
+        <nav class="flex items-center space-x-6 text-sm font-medium text-slate-500 ml-6">
+          <a href="#" class="text-slate-950 transition-colors">Overview</a>
+          <a href="#" class="hover:text-slate-950 transition-colors">Customers</a>
+          <a href="#" class="hover:text-slate-950 transition-colors">Products</a>
+          <a href="#" class="hover:text-slate-950 transition-colors">Settings</a>
+        </nav>
+      </div>
+      <div class="ml-auto flex items-center space-x-4">
+        <div class="relative">
+          <svg class="absolute left-2.5 top-2.5 h-4 w-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+          <input type="search" placeholder="Search..." class="h-9 w-64 rounded-md border border-slate-200 bg-transparent px-3 pl-9 py-1 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-slate-950">
+        </div>
+        <div class="h-8 w-8 rounded-full bg-slate-200 border border-slate-300"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex-1 space-y-4 p-8 pt-6 max-w-7xl mx-auto">
+    <div class="flex items-center justify-between space-y-2">
+      <h2 class="text-3xl font-bold tracking-tight">Dashboard</h2>
+      <div class="flex items-center space-x-2">
+        <button class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-slate-950 border border-slate-200 bg-transparent shadow-sm hover:bg-slate-100 h-9 px-4 py-2">
+          Jan 20, 2023 - Feb 09, 2023
+        </button>
+        <button class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-slate-950 bg-slate-950 text-slate-50 shadow hover:bg-slate-900 h-9 px-4 py-2">
+          Download
+        </button>
+      </div>
+    </div>
+
+    <!-- Metrics Cards -->
+    <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+      <div class="rounded-xl border border-slate-200 bg-white text-slate-950 shadow-sm p-6">
+        <div class="flex flex-row items-center justify-between space-y-0 pb-2">
+          <h3 class="tracking-tight text-sm font-medium">Total Revenue</h3>
+          <svg class="h-4 w-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+        </div>
+        <div>
+          <div class="text-2xl font-bold">$45,231.89</div>
+          <p class="text-xs text-slate-500 mt-1">+20.1% from last month</p>
+        </div>
+      </div>
+      <div class="rounded-xl border border-slate-200 bg-white text-slate-950 shadow-sm p-6">
+        <div class="flex flex-row items-center justify-between space-y-0 pb-2">
+          <h3 class="tracking-tight text-sm font-medium">Subscriptions</h3>
+          <svg class="h-4 w-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+        </div>
+        <div>
+          <div class="text-2xl font-bold">+2350</div>
+          <p class="text-xs text-slate-500 mt-1">+180.1% from last month</p>
+        </div>
+      </div>
+      <div class="rounded-xl border border-slate-200 bg-white text-slate-950 shadow-sm p-6">
+        <div class="flex flex-row items-center justify-between space-y-0 pb-2">
+          <h3 class="tracking-tight text-sm font-medium">Sales</h3>
+          <svg class="h-4 w-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+        </div>
+        <div>
+          <div class="text-2xl font-bold">+12,234</div>
+          <p class="text-xs text-slate-500 mt-1">+19% from last month</p>
+        </div>
+      </div>
+      <div class="rounded-xl border border-slate-200 bg-white text-slate-950 shadow-sm p-6">
+        <div class="flex flex-row items-center justify-between space-y-0 pb-2">
+          <h3 class="tracking-tight text-sm font-medium">Active Now</h3>
+          <svg class="h-4 w-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+        </div>
+        <div>
+          <div class="text-2xl font-bold">+573</div>
+          <p class="text-xs text-slate-500 mt-1">+201 since last hour</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Charts / List Grid -->
+    <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-7">
+      <div class="col-span-4 rounded-xl border border-slate-200 bg-white text-slate-950 shadow-sm">
+        <div class="p-6 pb-2">
+          <h3 class="font-semibold tracking-tight text-lg">Overview</h3>
+        </div>
+        <div class="p-6 pt-0 h-[300px] flex items-center justify-center">
+          <!-- Fake Bar Chart -->
+          <div class="flex items-end space-x-2 h-full w-full py-4">
+            <div class="bg-slate-900 w-full rounded-sm" style="height: 40%"></div>
+            <div class="bg-slate-900 w-full rounded-sm" style="height: 70%"></div>
+            <div class="bg-slate-900 w-full rounded-sm" style="height: 30%"></div>
+            <div class="bg-slate-900 w-full rounded-sm" style="height: 50%"></div>
+            <div class="bg-slate-900 w-full rounded-sm" style="height: 90%"></div>
+            <div class="bg-slate-900 w-full rounded-sm" style="height: 60%"></div>
+            <div class="bg-slate-900 w-full rounded-sm" style="height: 80%"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-span-3 rounded-xl border border-slate-200 bg-white text-slate-950 shadow-sm">
+        <div class="p-6 pb-2">
+          <h3 class="font-semibold tracking-tight text-lg">Recent Sales</h3>
+          <p class="text-sm text-slate-500">You made 265 sales this month.</p>
+        </div>
+        <div class="p-6 pt-4 space-y-6">
+          <div class="flex items-center">
+            <div class="w-9 h-9 rounded-full bg-slate-100 mr-4"></div>
+            <div class="space-y-1">
+              <p class="text-sm font-medium leading-none">Olivia Martin</p>
+              <p class="text-sm text-slate-500">olivia.martin@email.com</p>
+            </div>
+            <div class="ml-auto font-medium">+$1,999.00</div>
+          </div>
+          <div class="flex items-center">
+            <div class="w-9 h-9 rounded-full bg-slate-100 mr-4"></div>
+            <div class="space-y-1">
+              <p class="text-sm font-medium leading-none">Jackson Lee</p>
+              <p class="text-sm text-slate-500">jackson.lee@email.com</p>
+            </div>
+            <div class="ml-auto font-medium">+$39.00</div>
+          </div>
+          <div class="flex items-center">
+            <div class="w-9 h-9 rounded-full bg-slate-100 mr-4"></div>
+            <div class="space-y-1">
+              <p class="text-sm font-medium leading-none">Isabella Nguyen</p>
+              <p class="text-sm text-slate-500">isabella.nguyen@email.com</p>
+            </div>
+            <div class="ml-auto font-medium">+$299.00</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

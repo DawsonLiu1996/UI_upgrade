@@ -1,0 +1,20 @@
+{
+  "id": "042-stats-section",
+  "name": "Stats Section",
+  "type": "Component",
+  "tags": {
+    "style": [
+      "现代"
+    ],
+    "color": [
+      "通用色"
+    ],
+    "features": [
+      "stats",
+      "dashboard",
+      "analytics",
+      "ui",
+      "tailwind"
+    ]
+  }
+}

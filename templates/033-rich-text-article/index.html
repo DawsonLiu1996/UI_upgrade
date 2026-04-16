@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rich Text Article - Linear Style</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+    .glow-text { text-shadow: 0 0 20px rgba(255,255,255,0.1); }
+  </style>
+</head>
+<body class="bg-[#0a0a0a] text-[#ededed] antialiased selection:bg-purple-500/30 selection:text-purple-200">
+  <div class="max-w-3xl mx-auto px-6 py-20">
+    <header class="mb-16">
+      <div class="flex items-center space-x-3 text-sm text-[#888] mb-6">
+        <span class="bg-[#222] px-2.5 py-1 rounded-full text-[#eee] border border-[#333]">Product Update</span>
+        <span>October 24, 2023</span>
+      </div>
+      <h1 class="text-4xl md:text-5xl font-semibold tracking-tight leading-tight mb-6 glow-text">Introducing the new Insights Dashboard</h1>
+      <p class="text-xl text-[#a1a1a1] leading-relaxed">A completely reimagined analytics experience designed for speed, clarity, and deep exploration of your team's velocity.</p>
+    </header>
+
+    <article class="prose prose-invert prose-lg max-w-none prose-p:text-[#a1a1a1] prose-p:leading-relaxed prose-headings:text-[#ededed] prose-headings:font-medium prose-a:text-purple-400 prose-a:no-underline hover:prose-a:underline prose-img:rounded-xl prose-img:border prose-img:border-[#333]">
+      <p>We've spent the last three months rebuilding our insights engine from the ground up. The new architecture allows for sub-second query times even across millions of issues, while the frontend has been refined to present complex data elegantly.</p>
+      
+      <div class="my-12 p-1 rounded-2xl bg-gradient-to-b from-[#333] to-[#111]">
+        <div class="bg-[#111] rounded-xl p-8 aspect-video flex items-center justify-center text-[#555] border border-[#222]">
+          [ Hero Image / Video Placeholder ]
+        </div>
+      </div>
+
+      <h2 class="text-2xl mt-12 mb-6">Real-time Velocity Tracking</h2>
+      <p>No more waiting for overnight batch jobs. As issues are completed, your team's velocity charts update instantly. We achieve this by utilizing a distributed stream processing pipeline built on modern event-driven architecture.</p>
+
+      <ul class="my-8 space-y-4 text-[#a1a1a1]">
+        <li class="flex items-start">
+          <svg class="w-6 h-6 text-purple-500 mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+          <span><strong>Sub-second latency</strong> for all chart renders and filtering.</span>
+        </li>
+        <li class="flex items-start">
+          <svg class="w-6 h-6 text-purple-500 mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+          <span><strong>Custom dimensions</strong> allow slicing data by assignee, project, or custom tags.</span>
+        </li>
+        <li class="flex items-start">
+          <svg class="w-6 h-6 text-purple-500 mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+          <span><strong>Export capabilities</strong> to raw CSV or polished PDF reports.</span>
+        </li>
+      </ul>
+
+      <p>The update is rolling out to all workspaces starting today. To access it, simply navigate to the "Insights" tab in your sidebar.</p>
+    </article>
+    
+    <footer class="mt-20 pt-8 border-t border-[#222] flex items-center justify-between">
+      <div class="flex items-center space-x-4">
+        <img src="https://i.pravatar.cc/150?u=a" alt="Author" class="w-10 h-10 rounded-full grayscale opacity-80">
+        <div>
+          <p class="text-sm font-medium text-[#ededed]">Alex Rivera</p>
+          <p class="text-xs text-[#888]">Product Designer</p>
+        </div>
+      </div>
+      <div class="flex space-x-3">
+        <button class="px-4 py-2 bg-[#1a1a1a] hover:bg-[#2a2a2a] text-[#ededed] rounded-lg text-sm border border-[#333] transition-colors">Share</button>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

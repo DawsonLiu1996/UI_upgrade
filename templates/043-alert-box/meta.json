@@ -1,0 +1,20 @@
+{
+  "id": "043-alert-box",
+  "name": "Alert Box",
+  "type": "Component",
+  "tags": {
+    "style": [
+      "现代"
+    ],
+    "color": [
+      "通用色"
+    ],
+    "features": [
+      "alert",
+      "notification",
+      "banner",
+      "ui",
+      "tailwind"
+    ]
+  }
+}

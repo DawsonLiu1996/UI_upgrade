@@ -1,0 +1,5 @@
+- [x] `templates` 目录下新增了 031 至 050 编号的样板文件夹。
+- [x] 每个新样板包含有效的、带有风格标志物的 `index.html` 代码。
+- [x] 每个新样板包含格式正确的 `meta.json`（具备 name、type、tags.style、tags.color）。
+- [x] 运行 `npm run build` 无错误，Tailwind 的 `output.css` 成功扫描并包含新增样板的样式类。
+- [x] Gallery 能够正常加载、过滤、搜索 50 个样板，全屏预览功能表现正常。

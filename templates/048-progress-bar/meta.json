@@ -1,0 +1,20 @@
+{
+  "id": "048-progress-bar",
+  "name": "Progress Bar",
+  "type": "Component",
+  "tags": {
+    "style": [
+      "现代"
+    ],
+    "color": [
+      "通用色"
+    ],
+    "features": [
+      "progress",
+      "bar",
+      "indicator",
+      "ui",
+      "tailwind"
+    ]
+  }
+}

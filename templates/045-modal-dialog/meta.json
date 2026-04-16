@@ -1,0 +1,20 @@
+{
+  "id": "045-modal-dialog",
+  "name": "Modal Dialog",
+  "type": "Component",
+  "tags": {
+    "style": [
+      "现代"
+    ],
+    "color": [
+      "通用色"
+    ],
+    "features": [
+      "modal",
+      "dialog",
+      "popup",
+      "ui",
+      "tailwind"
+    ]
+  }
+}

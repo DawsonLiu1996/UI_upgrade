@@ -1,0 +1,20 @@
+{
+  "id": "050-badge-and-tag",
+  "name": "Badge and Tag",
+  "type": "Component",
+  "tags": {
+    "style": [
+      "现代"
+    ],
+    "color": [
+      "通用色"
+    ],
+    "features": [
+      "badge",
+      "tag",
+      "label",
+      "ui",
+      "tailwind"
+    ]
+  }
+}

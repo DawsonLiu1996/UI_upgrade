@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glass Navbar - NextUI Style</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .glass-nav {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: saturate(180%) blur(20px);
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-pink-100 via-purple-100 to-indigo-100 min-h-[200vh] font-sans antialiased">
+  
+  <!-- Fixed Floating Navbar -->
+  <div class="fixed top-4 left-0 w-full flex justify-center z-50 px-4">
+    <nav class="glass-nav border border-white/40 shadow-[0_8px_32px_rgba(0,0,0,0.04)] rounded-full px-6 py-3 flex items-center justify-between w-full max-w-4xl transition-all">
+      
+      <!-- Logo -->
+      <a href="#" class="flex items-center space-x-2 mr-8">
+        <div class="w-8 h-8 rounded-xl bg-gradient-to-tr from-purple-600 to-pink-500 shadow-md flex items-center justify-center">
+          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+        </div>
+        <span class="font-bold text-lg text-slate-800 tracking-tight">Acme</span>
+      </a>
+
+      <!-- Links (Desktop) -->
+      <div class="hidden md:flex items-center space-x-1">
+        <a href="#" class="px-4 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 rounded-full hover:bg-slate-100/50 transition-colors">Features</a>
+        <a href="#" class="px-4 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 rounded-full hover:bg-slate-100/50 transition-colors">Customers</a>
+        <a href="#" class="px-4 py-2 text-sm font-medium text-slate-900 bg-white shadow-sm rounded-full transition-colors relative">
+          Pricing
+          <span class="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-purple-600 rounded-full"></span>
+        </a>
+        <a href="#" class="px-4 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 rounded-full hover:bg-slate-100/50 transition-colors">Company</a>
+      </div>
+
+      <!-- Actions -->
+      <div class="flex items-center space-x-3 ml-auto md:ml-8">
+        <a href="#" class="hidden sm:inline-block px-4 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Login</a>
+        <a href="#" class="px-5 py-2 text-sm font-medium text-white bg-slate-900 rounded-full shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all">
+          Sign Up
+        </a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Dummy Content -->
+  <div class="pt-40 pb-20 px-8 max-w-4xl mx-auto text-center">
+    <h1 class="text-5xl font-extrabold text-slate-800 mb-6 tracking-tight">Scroll down to see the effect</h1>
+    <p class="text-xl text-slate-600 mb-12">The navbar stays floating and blurs the colorful background beautifully.</p>
+    
+    <div class="grid grid-cols-2 gap-8 mb-32">
+      <div class="h-64 rounded-3xl bg-white/40 shadow-xl backdrop-blur-sm border border-white/50"></div>
+      <div class="h-64 rounded-3xl bg-white/40 shadow-xl backdrop-blur-sm border border-white/50"></div>
+    </div>
+  </div>
+
+</body>
+</html>

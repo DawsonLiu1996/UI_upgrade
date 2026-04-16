@@ -1,0 +1,24 @@
+{
+  "id": "039-dashboard-analytics",
+  "name": "Dashboard Analytics",
+  "type": "Page/Dashboard",
+  "source": {
+    "url": "#",
+    "title": "shadcn/ui Dashboard Example"
+  },
+  "tags": {
+    "style": [
+      "极简"
+    ],
+    "color": [
+      "黑白灰"
+    ],
+    "features": [
+      "后台页面",
+      "轻边框",
+      "数据密集",
+      "高质感"
+    ]
+  },
+  "description": "典型 shadcn 风格的极简后台仪表盘页面。黑白灰配色，细边框和轻微的投影，强调数据内容。"
+}

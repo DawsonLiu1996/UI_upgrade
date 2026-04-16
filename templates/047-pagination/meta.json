@@ -1,0 +1,19 @@
+{
+  "id": "047-pagination",
+  "name": "Pagination",
+  "type": "Component",
+  "tags": {
+    "style": [
+      "现代"
+    ],
+    "color": [
+      "通用色"
+    ],
+    "features": [
+      "pagination",
+      "navigation",
+      "ui",
+      "tailwind"
+    ]
+  }
+}

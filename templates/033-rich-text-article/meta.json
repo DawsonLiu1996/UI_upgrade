@@ -1,0 +1,24 @@
+{
+  "id": "033-rich-text-article",
+  "name": "Rich Text Article",
+  "type": "Page/Blog",
+  "source": {
+    "url": "#",
+    "title": "Linear Updates"
+  },
+  "tags": {
+    "style": [
+      "极简",
+      "科技感",
+      "排版强"
+    ],
+    "color": [
+      "深色模式"
+    ],
+    "features": [
+      "大留白",
+      "高对比"
+    ]
+  },
+  "description": "现代 SaaS 更新列表页/博客详情页的排版。采用深色背景与大字体排版，极简克制。"
+}

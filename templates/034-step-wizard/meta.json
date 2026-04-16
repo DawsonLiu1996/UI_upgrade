@@ -1,0 +1,23 @@
+{
+  "id": "034-step-wizard",
+  "name": "Step Wizard",
+  "type": "Steps",
+  "source": {
+    "url": "#",
+    "title": "Ant Design Steps / Custom"
+  },
+  "tags": {
+    "style": [
+      "新拟物"
+    ],
+    "color": [
+      "品牌色"
+    ],
+    "features": [
+      "柔和UI",
+      "流程引导",
+      "表单向导"
+    ]
+  },
+  "description": "采用新拟物风格（Neumorphism）的分步向导，通过柔和的阴影区分层级，适合多步骤表单。"
+}

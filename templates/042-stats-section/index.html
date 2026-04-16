@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Stats Section</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 flex items-center justify-center h-screen p-6">
+  <div class="w-full max-w-4xl">
+    <h3 class="text-lg font-medium leading-6 text-gray-900">近30天数据</h3>
+    <dl class="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-3">
+      <div class="overflow-hidden rounded-lg bg-white px-4 py-5 shadow sm:p-6">
+        <dt class="truncate text-sm font-medium text-gray-500">总订阅数</dt>
+        <dd class="mt-1 text-3xl font-semibold tracking-tight text-gray-900">71,897</dd>
+        <dd class="mt-2 text-sm text-green-600 flex items-center">
+          <svg class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18" />
+          </svg>
+          12%
+        </dd>
+      </div>
+      <div class="overflow-hidden rounded-lg bg-white px-4 py-5 shadow sm:p-6">
+        <dt class="truncate text-sm font-medium text-gray-500">平均打开率</dt>
+        <dd class="mt-1 text-3xl font-semibold tracking-tight text-gray-900">58.16%</dd>
+        <dd class="mt-2 text-sm text-green-600 flex items-center">
+          <svg class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18" />
+          </svg>
+          2.02%
+        </dd>
+      </div>
+      <div class="overflow-hidden rounded-lg bg-white px-4 py-5 shadow sm:p-6">
+        <dt class="truncate text-sm font-medium text-gray-500">平均点击率</dt>
+        <dd class="mt-1 text-3xl font-semibold tracking-tight text-gray-900">24.57%</dd>
+        <dd class="mt-2 text-sm text-red-600 flex items-center">
+          <svg class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
+          </svg>
+          3.1%
+        </dd>
+      </div>
+    </dl>
+  </div>
+</body>
+</html>

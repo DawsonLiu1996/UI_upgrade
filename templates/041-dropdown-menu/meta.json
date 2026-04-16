@@ -1,0 +1,20 @@
+{
+  "id": "041-dropdown-menu",
+  "name": "Dropdown Menu",
+  "type": "Component",
+  "tags": {
+    "style": [
+      "现代"
+    ],
+    "color": [
+      "通用色"
+    ],
+    "features": [
+      "dropdown",
+      "menu",
+      "ui",
+      "navigation",
+      "tailwind"
+    ]
+  }
+}

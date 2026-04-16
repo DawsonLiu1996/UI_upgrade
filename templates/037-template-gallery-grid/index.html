@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Template Gallery - Notion Style</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+    .card-hover { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .card-hover:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(0,0,0,0.08); }
+  </style>
+</head>
+<body class="bg-[#ffffff] text-[#111111] antialiased min-h-screen p-8 md:p-16">
+  <div class="max-w-7xl mx-auto">
+    <!-- Header -->
+    <header class="mb-12 flex flex-col md:flex-row md:items-end justify-between border-b border-[#e5e5e5] pb-8">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-4">Template Gallery</h1>
+        <p class="text-lg text-[#666666] max-w-xl">Jumpstart your workspace with pre-built setups. Customize them to fit your exact needs.</p>
+      </div>
+      <div class="mt-6 md:mt-0 flex space-x-2">
+        <button class="px-4 py-2 text-sm font-semibold border border-[#e5e5e5] rounded hover:bg-[#f7f7f7] transition-colors">Filters</button>
+        <button class="px-4 py-2 text-sm font-semibold border border-[#e5e5e5] rounded hover:bg-[#f7f7f7] transition-colors flex items-center">
+          Sort by: Popular
+          <svg class="w-4 h-4 ml-2 text-[#666]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+      <!-- Card 1 -->
+      <a href="#" class="group block rounded-lg border border-[#e5e5e5] overflow-hidden card-hover bg-white">
+        <div class="h-48 bg-[#f7f7f7] border-b border-[#e5e5e5] p-6 flex items-center justify-center text-5xl">
+          🗓️
+        </div>
+        <div class="p-5">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-bold uppercase tracking-wider text-[#999999]">Personal</span>
+            <span class="px-2 py-0.5 bg-[#f0f0f0] text-xs font-medium rounded text-[#666]">Free</span>
+          </div>
+          <h3 class="text-lg font-bold mb-2 group-hover:text-blue-600 transition-colors">Habit Tracker</h3>
+          <p class="text-sm text-[#666666] line-clamp-2">A simple, effective way to track daily habits and build routines.</p>
+        </div>
+      </a>
+
+      <!-- Card 2 -->
+      <a href="#" class="group block rounded-lg border border-[#e5e5e5] overflow-hidden card-hover bg-white">
+        <div class="h-48 bg-[#fcf3f3] border-b border-[#e5e5e5] p-6 flex items-center justify-center text-5xl">
+          🚀
+        </div>
+        <div class="p-5">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-bold uppercase tracking-wider text-[#999999]">Startup</span>
+            <span class="px-2 py-0.5 bg-[#f0f0f0] text-xs font-medium rounded text-[#666]">Pro</span>
+          </div>
+          <h3 class="text-lg font-bold mb-2 group-hover:text-blue-600 transition-colors">Company Wiki</h3>
+          <p class="text-sm text-[#666666] line-clamp-2">Centralize your company knowledge, policies, and onboarding.</p>
+        </div>
+      </a>
+
+      <!-- Card 3 -->
+      <a href="#" class="group block rounded-lg border border-[#e5e5e5] overflow-hidden card-hover bg-white">
+        <div class="h-48 bg-[#f3f8fc] border-b border-[#e5e5e5] p-6 flex items-center justify-center text-5xl">
+          📊
+        </div>
+        <div class="p-5">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-bold uppercase tracking-wider text-[#999999]">Design</span>
+            <span class="px-2 py-0.5 bg-[#f0f0f0] text-xs font-medium rounded text-[#666]">Free</span>
+          </div>
+          <h3 class="text-lg font-bold mb-2 group-hover:text-blue-600 transition-colors">Design System Repo</h3>
+          <p class="text-sm text-[#666666] line-clamp-2">Document your UI components, brand guidelines, and assets.</p>
+        </div>
+      </a>
+
+      <!-- Card 4 -->
+      <a href="#" class="group block rounded-lg border border-[#e5e5e5] overflow-hidden card-hover bg-white">
+        <div class="h-48 bg-[#fcfaf3] border-b border-[#e5e5e5] p-6 flex items-center justify-center text-5xl">
+          ✍️
+        </div>
+        <div class="p-5">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-bold uppercase tracking-wider text-[#999999]">Content</span>
+            <span class="px-2 py-0.5 bg-[#f0f0f0] text-xs font-medium rounded text-[#666]">Free</span>
+          </div>
+          <h3 class="text-lg font-bold mb-2 group-hover:text-blue-600 transition-colors">Content Calendar</h3>
+          <p class="text-sm text-[#666666] line-clamp-2">Plan, draft, and publish your blog posts and social media.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</body>
+</html>

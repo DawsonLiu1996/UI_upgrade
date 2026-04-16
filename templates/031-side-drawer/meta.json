@@ -1,0 +1,25 @@
+{
+  "id": "031-side-drawer",
+  "name": "Side Drawer",
+  "type": "Sidebar",
+  "source": {
+    "url": "#",
+    "title": "MUI Drawer"
+  },
+  "tags": {
+    "style": [
+      "现代"
+    ],
+    "color": [
+      "蓝灰系"
+    ],
+    "features": [
+      "Material",
+      "侧边栏",
+      "层叠遮罩",
+      "移动端友好",
+      "深邃阴影"
+    ]
+  },
+  "description": "侧滑抽屉导航，适合后台与移动端。带有遮罩背景模糊和高层级投影。"
+}
