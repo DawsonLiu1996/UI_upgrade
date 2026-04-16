@@ -52,7 +52,7 @@ const pill = (label, active, onClick) => {
   const btn = document.createElement('button')
   btn.type = 'button'
   btn.className = active
-    ? 'inline-flex items-center rounded-full bg-zinc-950 px-3 py-1 text-xs font-semibold text-white'
+    ? 'inline-flex items-center rounded-full border border-zinc-950 bg-zinc-950 px-3 py-1 text-xs font-semibold text-white'
     : 'inline-flex items-center rounded-full border border-zinc-200 bg-white px-3 py-1 text-xs font-semibold text-zinc-700 hover:bg-zinc-50'
   btn.textContent = label
   btn.addEventListener('click', onClick)
@@ -95,7 +95,7 @@ const render = () => {
   const row1 = document.createElement('div')
   row1.className = 'flex flex-wrap items-center gap-2'
   row1.appendChild(
-    pill(state.style ? `Style: ${state.style}` : 'Style: All', !state.style, () => {
+    pill('Style: All', !state.style, () => {
       state.style = null
       render()
     }),
@@ -112,7 +112,7 @@ const render = () => {
   const row2 = document.createElement('div')
   row2.className = 'mt-3 flex flex-wrap items-center gap-2'
   row2.appendChild(
-    pill(state.color ? `Color: ${state.color}` : 'Color: All', !state.color, () => {
+    pill('Color: All', !state.color, () => {
       state.color = null
       render()
     }),

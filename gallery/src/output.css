@@ -1409,6 +1409,9 @@
   .border-zinc-300 {
     border-color: var(--color-zinc-300);
   }
+  .border-zinc-950 {
+    border-color: var(--color-zinc-950);
+  }
   .bg-\[\#0a0a0a\] {
     background-color: #0a0a0a;
   }
