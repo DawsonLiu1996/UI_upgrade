@@ -1,4 +1,4 @@
-import './style.css'
+import './output.css'
 
 const metaModules = import.meta.glob('../../templates/**/meta.json', { eager: true, import: 'default' })
 const htmlModules = import.meta.glob('../../templates/**/index.html', {
