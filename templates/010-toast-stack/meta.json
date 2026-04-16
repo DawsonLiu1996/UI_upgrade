@@ -1,0 +1,15 @@
+{
+  "id": "010-toast-stack",
+  "name": "Toast Stack",
+  "type": "Toast/Notification",
+  "source": {
+    "url": "https://ui.shadcn.com/docs/components/sonner",
+    "title": "shadcn/ui Sonner"
+  },
+  "tags": {
+    "style": ["极简", "现代"],
+    "color": ["深色系", "黑白灰"],
+    "features": ["堆叠", "非侵入", "动效可加"]
+  }
+}
+

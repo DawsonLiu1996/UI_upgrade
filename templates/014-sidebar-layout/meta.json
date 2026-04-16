@@ -1,0 +1,15 @@
+{
+  "id": "014-sidebar-layout",
+  "name": "App Shell (Sidebar Layout)",
+  "type": "Layout/AppShell",
+  "source": {
+    "url": "https://mantine.dev/core/app-shell/",
+    "title": "Mantine AppShell"
+  },
+  "tags": {
+    "style": ["企业风", "产品化"],
+    "color": ["白底", "灰蓝系"],
+    "features": ["侧边导航", "顶部栏", "内容区留白"]
+  }
+}
+

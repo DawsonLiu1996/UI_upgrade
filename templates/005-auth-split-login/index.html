@@ -1,0 +1,107 @@
+<section class="bg-zinc-950 text-zinc-50">
+  <div class="mx-auto grid min-h-svh max-w-6xl lg:grid-cols-12">
+    <div class="relative hidden overflow-hidden border-r border-white/10 lg:col-span-5 lg:block">
+      <div class="absolute inset-0 bg-gradient-to-br from-fuchsia-500/25 via-indigo-500/10 to-cyan-400/20"></div>
+      <div class="absolute -left-24 -top-24 h-80 w-80 rounded-full bg-fuchsia-500/25 blur-3xl"></div>
+      <div class="absolute -right-24 -bottom-24 h-80 w-80 rounded-full bg-cyan-400/20 blur-3xl"></div>
+
+      <div class="relative flex h-full flex-col justify-between px-10 py-10">
+        <div class="flex items-center gap-3">
+          <div class="flex h-10 w-10 items-center justify-center rounded-2xl bg-white/10 ring-1 ring-white/15">UI</div>
+          <div class="text-sm font-semibold">Studio</div>
+        </div>
+
+        <div>
+          <h2 class="text-balance text-3xl font-semibold tracking-tight">Design system, delivered as code.</h2>
+          <p class="mt-4 text-sm leading-6 text-zinc-200">
+            Clean defaults, subtle depth, and responsive layout primitives that can be reused across frameworks.
+          </p>
+          <div class="mt-8 grid gap-3 text-xs text-zinc-200">
+            <div class="rounded-2xl bg-white/5 p-4 ring-1 ring-white/10">
+              <div class="font-semibold text-white">Security-first</div>
+              <div class="mt-1 text-zinc-300">No third-party scripts or remote assets required.</div>
+            </div>
+            <div class="rounded-2xl bg-white/5 p-4 ring-1 ring-white/10">
+              <div class="font-semibold text-white">Readable defaults</div>
+              <div class="mt-1 text-zinc-300">Balanced typography and spacing for dense screens.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-xs text-zinc-400">© Studio UI</div>
+      </div>
+    </div>
+
+    <div class="lg:col-span-7">
+      <div class="mx-auto flex max-w-md flex-col justify-center px-6 py-12 sm:px-10 sm:py-16">
+        <h1 class="text-2xl font-semibold tracking-tight text-white">Sign in</h1>
+        <p class="mt-2 text-sm text-zinc-300">Use your work email to continue.</p>
+
+        <form class="mt-8 space-y-4">
+          <label class="block">
+            <span class="text-xs font-medium text-zinc-300">Email</span>
+            <input
+              class="mt-2 w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-zinc-500 focus:border-cyan-400/40 focus:outline-none focus:ring-4 focus:ring-cyan-400/10"
+              placeholder="name@company.com"
+              type="email"
+            />
+          </label>
+          <label class="block">
+            <span class="text-xs font-medium text-zinc-300">Password</span>
+            <input
+              class="mt-2 w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-zinc-500 focus:border-fuchsia-400/40 focus:outline-none focus:ring-4 focus:ring-fuchsia-400/10"
+              placeholder="••••••••"
+              type="password"
+            />
+          </label>
+
+          <div class="flex items-center justify-between">
+            <label class="inline-flex items-center gap-2 text-sm text-zinc-300">
+              <input class="h-4 w-4 rounded border-white/20 bg-white/10 text-white accent-white" type="checkbox" />
+              Remember me
+            </label>
+            <a class="text-sm font-semibold text-white/90 underline-offset-4 hover:underline" href="#">Forgot?</a>
+          </div>
+
+          <button
+            class="mt-2 inline-flex w-full items-center justify-center rounded-xl bg-white px-4 py-3 text-sm font-semibold text-zinc-950 hover:bg-zinc-100"
+            type="button"
+          >
+            Continue
+          </button>
+
+          <div class="relative py-2">
+            <div class="absolute inset-0 flex items-center">
+              <div class="w-full border-t border-white/10"></div>
+            </div>
+            <div class="relative flex justify-center">
+              <span class="bg-zinc-950 px-3 text-xs text-zinc-400">or</span>
+            </div>
+          </div>
+
+          <div class="grid gap-3 sm:grid-cols-2">
+            <button
+              class="inline-flex items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-semibold text-white hover:bg-white/10"
+              type="button"
+            >
+              <span class="h-2 w-2 rounded-full bg-white"></span>
+              SSO
+            </button>
+            <button
+              class="inline-flex items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-semibold text-white hover:bg-white/10"
+              type="button"
+            >
+              <span class="h-2 w-2 rounded-full bg-white"></span>
+              Passkey
+            </button>
+          </div>
+
+          <p class="pt-3 text-center text-xs text-zinc-400">
+            By continuing, you agree to the <a class="text-zinc-200 underline-offset-4 hover:underline" href="#">Terms</a>.
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+

@@ -1,0 +1,15 @@
+{
+  "id": "012-testimonials-grid",
+  "name": "Testimonials (Grid)",
+  "type": "Testimonials",
+  "source": {
+    "url": "https://tailwindcss.com/plus/ui-blocks/marketing/sections/testimonials",
+    "title": "Tailwind UI Blocks - Testimonials"
+  },
+  "tags": {
+    "style": ["现代", "营销风"],
+    "color": ["白底", "黑白灰"],
+    "features": ["卡片引用", "头像占位", "排版强"]
+  }
+}
+

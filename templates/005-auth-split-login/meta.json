@@ -1,0 +1,15 @@
+{
+  "id": "005-auth-split-login",
+  "name": "Split Login (Brand Panel)",
+  "type": "Form/Auth",
+  "source": {
+    "url": "https://tailwindcss.com/plus/ui-blocks/application-ui/forms/sign-in-forms",
+    "title": "Tailwind UI Blocks - Sign-in and Registration"
+  },
+  "tags": {
+    "style": ["现代", "精致", "产品化"],
+    "color": ["深色系", "蓝紫渐变"],
+    "features": ["左右分栏", "柔和阴影", "输入框聚焦态"]
+  }
+}
+

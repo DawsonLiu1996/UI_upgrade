@@ -1,0 +1,15 @@
+{
+  "id": "011-empty-state",
+  "name": "Empty State (Actionable)",
+  "type": "Empty/State",
+  "source": {
+    "url": "https://eui.elastic.co/#/display/empty-prompt",
+    "title": "Elastic EUI EmptyPrompt"
+  },
+  "tags": {
+    "style": ["企业风", "现代"],
+    "color": ["白底", "黑白灰"],
+    "features": ["插画占位(纯CSS)", "引导操作", "信息层级清晰"]
+  }
+}
+

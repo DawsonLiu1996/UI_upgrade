@@ -1,0 +1,41 @@
+<section class="bg-zinc-50">
+  <div class="mx-auto max-w-6xl px-6 py-16">
+    <div class="relative mx-auto max-w-lg">
+      <div class="absolute inset-0 rounded-3xl bg-black/30 blur-2xl"></div>
+      <div class="relative rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm">
+        <div class="flex items-start gap-4">
+          <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-rose-50 ring-1 ring-rose-200">
+            <svg viewBox="0 0 24 24" class="h-5 w-5 text-rose-700" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 9v4m0 4h.01" stroke-linecap="round" />
+              <path
+                d="M10.3 4.2 3.2 18.3a2 2 0 0 0 1.8 2.9h14a2 2 0 0 0 1.8-2.9L13.7 4.2a2 2 0 0 0-3.4 0Z"
+              />
+            </svg>
+          </div>
+          <div class="flex-1">
+            <div class="text-lg font-semibold text-zinc-950">Delete workspace?</div>
+            <div class="mt-1 text-sm leading-6 text-zinc-600">
+              This action is permanent. All projects, members, and API tokens will be removed.
+            </div>
+            <div class="mt-4 rounded-2xl border border-zinc-200 bg-zinc-50 p-4">
+              <div class="text-xs font-semibold text-zinc-700">Type the workspace name to confirm</div>
+              <input
+                class="mt-2 w-full rounded-xl border border-zinc-200 bg-white px-4 py-2.5 text-sm text-zinc-900 placeholder:text-zinc-400 focus:border-zinc-400 focus:outline-none focus:ring-4 focus:ring-zinc-100"
+                placeholder="studio-ui"
+                type="text"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-6 flex flex-col-reverse gap-2 sm:flex-row sm:items-center sm:justify-end">
+          <button class="rounded-xl border border-zinc-200 bg-white px-4 py-2.5 text-sm font-semibold text-zinc-900 hover:bg-zinc-50">
+            Cancel
+          </button>
+          <button class="rounded-xl bg-rose-600 px-4 py-2.5 text-sm font-semibold text-white hover:bg-rose-700">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

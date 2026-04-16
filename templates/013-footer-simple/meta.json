@@ -1,0 +1,15 @@
+{
+  "id": "013-footer-simple",
+  "name": "Footer (Simple)",
+  "type": "Footer",
+  "source": {
+    "url": "https://tailwindcss.com/plus/ui-blocks/marketing/sections/footers",
+    "title": "Tailwind UI Blocks - Footers"
+  },
+  "tags": {
+    "style": ["极简", "现代"],
+    "color": ["白底", "黑白灰"],
+    "features": ["多列链接", "低对比边框", "紧凑信息"]
+  }
+}
+

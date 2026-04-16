@@ -1,0 +1,15 @@
+{
+  "id": "001-hero-gradient-product",
+  "name": "Gradient Hero / Product Launch",
+  "type": "Hero",
+  "source": {
+    "url": "https://tailwindcss.com/plus/ui-blocks/marketing",
+    "title": "Tailwind UI Blocks - Marketing"
+  },
+  "tags": {
+    "style": ["现代", "科技感", "极简"],
+    "color": ["深色系", "蓝紫渐变"],
+    "features": ["大留白", "光晕背景", "高对比CTA"]
+  }
+}
+

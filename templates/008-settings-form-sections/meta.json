@@ -1,0 +1,15 @@
+{
+  "id": "008-settings-form-sections",
+  "name": "Settings Form (Sectioned)",
+  "type": "Form/Settings",
+  "source": {
+    "url": "https://tailwindcss.com/plus/ui-blocks/application-ui/forms/form-layouts",
+    "title": "Tailwind UI Blocks - Form Layouts"
+  },
+  "tags": {
+    "style": ["企业风", "现代"],
+    "color": ["白底", "黑白灰"],
+    "features": ["分区表单", "对齐清晰", "说明文案"]
+  }
+}
+

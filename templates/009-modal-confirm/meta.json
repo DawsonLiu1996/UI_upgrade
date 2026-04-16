@@ -1,0 +1,15 @@
+{
+  "id": "009-modal-confirm",
+  "name": "Confirm Modal",
+  "type": "Modal",
+  "source": {
+    "url": "https://www.radix-ui.com/primitives/docs/components/dialog",
+    "title": "Radix UI Dialog"
+  },
+  "tags": {
+    "style": ["极简", "产品化"],
+    "color": ["白底", "黑白灰"],
+    "features": ["清晰分区", "按钮层级", "警示态"]
+  }
+}
+
