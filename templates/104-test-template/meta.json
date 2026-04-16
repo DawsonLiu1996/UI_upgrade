@@ -1,0 +1,25 @@
+{
+  "id": "104-test-template",
+  "name": "Test Template",
+  "kind": "component",
+  "domain": [
+    "data-display"
+  ],
+  "tags": {
+    "aesthetic": [
+      "glassmorphism"
+    ],
+    "theme": "dark",
+    "palette": [
+      "fuchsia"
+    ],
+    "patterns": [],
+    "capabilities": [
+      "responsive"
+    ],
+    "tokens": [
+      "tailwind",
+      "generated"
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+- [x] Git 仓库中存在名为 `v1.0` 的 tag。
+- [x] 随机检查几个 `/workspace/templates/**/meta.json`，确认包含 `kind`、`domain` 等新字段，不再使用旧的 `type` 和混乱的 `tags`。
+- [x] `gallery/vite.config.js` 的 `server.fs.allow` 已被限制为 `['../templates']` 或类似的安全范围。
+- [x] `gallery/src/main.js` 渲染逻辑中涉及外部数据的部分已改用安全的文本注入（`textContent`），避免直接拼接 `innerHTML`。
+- [x] `scripts/generate-template.js` 存在且可执行，能够根据输入的 `aesthetic`（如 `glassmorphism`）等参数，成功生成一个带有预设风格 Tailwind 类的 `index.html`。
